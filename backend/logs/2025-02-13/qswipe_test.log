@@ -1,0 +1,225 @@
+2025-02-13 09:27:46,880 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:01:29,906 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:44,038 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:45,562 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:46,666 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:47,798 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:48,940 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:49,800 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:21:50,762 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:22:00,759 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:22:02,123 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:23:15,021 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:23:16,498 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:23:17,579 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:26:25,530 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:28:06,802 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:28:15,751 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:30:23,575 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:37:57,664 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:37:57,894 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:37:59,055 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:00,563 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:00,728 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:01,677 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:01,890 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:03,177 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:04,350 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:05,559 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:05,813 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:07,523 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:07,768 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:08,469 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:09,795 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:10,956 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:31,583 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:32,533 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:32,751 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:34,180 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:35,448 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:39,235 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:39,463 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:40,840 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:41,027 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:42,015 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:42,237 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:43,502 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:44,892 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:45,097 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:46,154 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:46,467 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:47,228 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:48,233 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:48,435 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:38:49,530 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:44:04,101 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:44:04,101 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:44:04,112 - INFO - Feedback: b'4'
+2025-02-13 10:44:04,113 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:44:07,113 - INFO - Sending command: i:
+
+2025-02-13 10:44:07,114 - INFO - Feedback: b'0'
+2025-02-13 10:44:07,114 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:44:10,115 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:44:10,115 - INFO - Feedback: b''
+2025-02-13 10:44:10,116 - ERROR - Received empty feedback.
+2025-02-13 10:44:13,116 - INFO - Sending command: i:
+
+2025-02-13 10:44:13,520 - INFO - Feedback: b'0'
+2025-02-13 10:44:13,521 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:44:16,521 - INFO - Sending command: e:s:c:e:2:
+
+2025-02-13 10:44:16,522 - INFO - Feedback: b''
+2025-02-13 10:44:16,522 - ERROR - Received empty feedback.
+2025-02-13 10:44:19,523 - INFO - Sending command: i:
+
+2025-02-13 10:44:19,524 - INFO - Feedback: b'3'
+2025-02-13 10:44:19,524 - ERROR - Unexpected feedback code: 3
+2025-02-13 10:44:22,525 - INFO - Sending command: e:s:c:e:1:
+
+2025-02-13 10:44:22,525 - INFO - Feedback: b'0'
+2025-02-13 10:44:22,526 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:44:25,527 - INFO - Sending command: i:
+
+2025-02-13 10:44:25,527 - INFO - Feedback: b''
+2025-02-13 10:44:25,528 - ERROR - Received empty feedback.
+2025-02-13 10:44:28,531 - INFO - Cycle: 1/1 completed.
+2025-02-13 10:44:28,646 - INFO - Serial connection closed.
+2025-02-13 10:44:28,647 - INFO - Total cycles completed: 8
+2025-02-13 10:44:28,647 - INFO - Total errors encountered: 8
+2025-02-13 10:44:28,647 - INFO - Total timeouts encountered: 0
+2025-02-13 10:45:09,126 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:45:09,126 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:45:09,136 - INFO - Feedback: b'4'
+2025-02-13 10:45:09,136 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:45:12,137 - INFO - Sending command: i:
+
+2025-02-13 10:45:13,149 - INFO - Feedback: b''
+2025-02-13 10:45:13,149 - ERROR - Received empty feedback.
+2025-02-13 10:45:16,150 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:45:16,150 - INFO - Feedback: b'0'
+2025-02-13 10:45:16,151 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:45:19,152 - INFO - Cycle: 1/2 completed.
+2025-02-13 10:45:19,152 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:45:19,153 - INFO - Feedback: b''
+2025-02-13 10:45:19,153 - ERROR - Received empty feedback.
+2025-02-13 10:45:22,154 - INFO - Sending command: i:
+
+2025-02-13 10:45:22,155 - INFO - Feedback: b'0'
+2025-02-13 10:45:22,155 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:45:25,155 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:45:25,157 - INFO - Feedback: b''
+2025-02-13 10:45:25,157 - ERROR - Received empty feedback.
+2025-02-13 10:45:28,157 - INFO - Cycle: 2/2 completed.
+2025-02-13 10:45:28,262 - INFO - Serial connection closed.
+2025-02-13 10:45:28,262 - INFO - Total cycles completed: 6
+2025-02-13 10:45:28,262 - INFO - Total errors encountered: 6
+2025-02-13 10:45:28,263 - INFO - Total timeouts encountered: 0
+2025-02-13 10:45:46,815 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:45:46,815 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:45:46,825 - INFO - Feedback: b'4'
+2025-02-13 10:45:46,825 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:45:49,826 - INFO - Sending command: i:
+
+2025-02-13 10:45:50,835 - INFO - Feedback: b''
+2025-02-13 10:45:50,836 - ERROR - Received empty feedback.
+2025-02-13 10:45:53,837 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:45:53,838 - INFO - Feedback: b'0'
+2025-02-13 10:45:53,838 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:45:56,839 - INFO - Cycle: 1/2 completed.
+2025-02-13 10:45:56,839 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:45:56,839 - INFO - Feedback: b''
+2025-02-13 10:45:56,839 - ERROR - Received empty feedback.
+2025-02-13 10:45:59,840 - INFO - Sending command: i:
+
+2025-02-13 10:45:59,841 - INFO - Feedback: b'0'
+2025-02-13 10:45:59,841 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:46:02,842 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:46:02,842 - INFO - Feedback: b''
+2025-02-13 10:46:02,842 - ERROR - Received empty feedback.
+2025-02-13 10:46:05,843 - INFO - Cycle: 2/2 completed.
+2025-02-13 10:46:05,953 - INFO - Serial connection closed.
+2025-02-13 10:46:05,953 - INFO - Total cycles completed: 6
+2025-02-13 10:46:05,953 - INFO - Total errors encountered: 6
+2025-02-13 10:46:05,954 - INFO - Total timeouts encountered: 0
+2025-02-13 10:47:54,240 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:47:54,240 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:47:54,251 - INFO - Feedback: b'4'
+2025-02-13 10:47:54,251 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:47:59,252 - INFO - Sending command: i:
+
+2025-02-13 10:47:59,253 - INFO - Feedback: b'0'
+2025-02-13 10:47:59,253 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:48:04,253 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:48:04,254 - INFO - Feedback: b''
+2025-02-13 10:48:04,255 - ERROR - Received empty feedback.
+2025-02-13 10:48:09,256 - INFO - Cycle: 1/1 completed.
+2025-02-13 10:48:09,362 - INFO - Serial connection closed.
+2025-02-13 10:48:09,363 - INFO - Total cycles completed: 3
+2025-02-13 10:48:09,363 - INFO - Total errors encountered: 3
+2025-02-13 10:48:09,363 - INFO - Total timeouts encountered: 0
+2025-02-13 10:48:19,729 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:48:19,729 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:48:19,739 - INFO - Feedback: b'4'
+2025-02-13 10:48:19,739 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:48:29,741 - INFO - Sending command: i:
+
+2025-02-13 10:48:29,741 - INFO - Feedback: b'0'
+2025-02-13 10:48:29,741 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:48:39,742 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:48:39,743 - INFO - Feedback: b''
+2025-02-13 10:48:39,743 - ERROR - Received empty feedback.
+2025-02-13 10:48:49,744 - INFO - Cycle: 1/1 completed.
+2025-02-13 10:48:49,871 - INFO - Serial connection closed.
+2025-02-13 10:48:49,871 - INFO - Total cycles completed: 3
+2025-02-13 10:48:49,871 - INFO - Total errors encountered: 3
+2025-02-13 10:48:49,872 - INFO - Total timeouts encountered: 0
+2025-02-13 10:49:10,034 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:49:10,035 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:49:10,046 - INFO - Feedback: b'4'
+2025-02-13 10:49:10,046 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:49:20,047 - INFO - Sending command: i:
+
+2025-02-13 10:49:20,048 - INFO - Feedback: b'0'
+2025-02-13 10:49:20,048 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:49:30,049 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-13 10:49:30,049 - INFO - Feedback: b''
+2025-02-13 10:49:30,050 - ERROR - Received empty feedback.
+2025-02-13 10:49:40,051 - INFO - Cycle: 1/1 completed.
+2025-02-13 10:49:40,166 - INFO - Serial connection closed.
+2025-02-13 10:49:40,167 - INFO - Total cycles completed: 3
+2025-02-13 10:49:40,167 - INFO - Total errors encountered: 3
+2025-02-13 10:49:40,167 - INFO - Total timeouts encountered: 0
+2025-02-13 10:49:46,264 - INFO - Connected to COM3 at 115200 baud.
+2025-02-13 10:49:46,264 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-13 10:49:46,275 - INFO - Feedback: b'4'
+2025-02-13 10:49:46,275 - ERROR - Unexpected feedback code: 4
+2025-02-13 10:49:56,275 - INFO - Sending command: i:
+
+2025-02-13 10:49:56,276 - INFO - Feedback: b'0'
+2025-02-13 10:49:56,276 - ERROR - Unexpected feedback code: 0
+2025-02-13 10:53:31,591 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:53:44,318 - ERROR - Failed to connect to COM0: could not open port 'COM0': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:56:22,399 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 10:56:27,090 - ERROR - Failed to connect to COM0: could not open port 'COM0': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 11:01:02,887 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 11:01:04,886 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 11:01:06,236 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 11:01:12,595 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

@@ -1,0 +1,241 @@
+2025-02-18 10:11:49,128 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-18 10:23:57,175 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 10:23:57,176 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 10:23:57,793 - INFO - Feedback: b'0'
+2025-02-18 10:24:00,794 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 10:24:00,795 - INFO - Feedback: b'13'
+2025-02-18 10:24:00,795 - WARNING - Timeout occurred.
+2025-02-18 10:24:03,795 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 10:24:03,796 - INFO - Feedback: b'0'
+2025-02-18 10:24:06,797 - INFO - Cycle: 1/5 completed.
+2025-02-18 10:24:06,798 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 10:24:06,809 - INFO - Feedback: b'13'
+2025-02-18 10:24:06,809 - WARNING - Timeout occurred.
+2025-02-18 10:24:09,809 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 10:24:09,810 - INFO - Feedback: b'0'
+2025-02-18 10:24:12,811 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 10:24:12,812 - INFO - Feedback: b'13'
+2025-02-18 10:24:12,812 - WARNING - Timeout occurred.
+2025-02-18 10:24:15,813 - INFO - Cycle: 2/5 completed.
+2025-02-18 10:24:15,814 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 10:24:15,815 - INFO - Feedback: b'0'
+2025-02-18 10:24:18,815 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 10:24:18,816 - INFO - Feedback: b'13'
+2025-02-18 10:24:18,817 - WARNING - Timeout occurred.
+2025-02-18 10:24:21,818 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 10:24:21,819 - INFO - Feedback: b'0'
+2025-02-18 10:24:24,820 - INFO - Cycle: 3/5 completed.
+2025-02-18 10:24:24,820 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 10:24:24,821 - INFO - Feedback: b'13'
+2025-02-18 10:24:24,821 - WARNING - Timeout occurred.
+2025-02-18 10:24:27,822 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 10:24:27,823 - INFO - Feedback: b'0'
+2025-02-18 10:24:30,824 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 10:24:30,825 - INFO - Feedback: b'13'
+2025-02-18 10:24:30,826 - WARNING - Timeout occurred.
+2025-02-18 10:24:33,826 - INFO - Cycle: 4/5 completed.
+2025-02-18 10:24:33,827 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 10:24:33,828 - INFO - Feedback: b'0'
+2025-02-18 10:24:36,829 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 10:24:36,830 - INFO - Feedback: b'13'
+2025-02-18 10:24:36,831 - WARNING - Timeout occurred.
+2025-02-18 10:24:39,832 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 10:24:39,833 - INFO - Feedback: b'0'
+2025-02-18 10:24:42,834 - INFO - Cycle: 5/5 completed.
+2025-02-18 10:24:42,938 - INFO - Serial connection closed.
+2025-02-18 10:24:42,938 - INFO - Total commands executed: 15
+2025-02-18 10:24:42,938 - INFO - Total errors encountered: 0
+2025-02-18 10:24:42,938 - INFO - Total timeouts encountered: 7
+2025-02-18 10:24:42,938 - INFO - Total cycles completed: 5
+2025-02-18 10:26:27,208 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 10:26:27,208 - INFO - Sending command: p:1:b1:1:200:4:200:
+
+
+2025-02-18 10:26:28,228 - INFO - Feedback: b''
+2025-02-18 10:26:31,229 - INFO - Sending command: p:1:b2:1:200:4:200:
+
+
+2025-02-18 10:26:31,230 - INFO - Feedback: b'0'
+2025-02-18 10:26:34,231 - INFO - Cycle: 1/5 completed.
+2025-02-18 10:26:34,231 - INFO - Sending command: p:1:b1:1:200:4:200:
+
+
+2025-02-18 10:26:34,232 - INFO - Feedback: b'13'
+2025-02-18 10:26:34,232 - WARNING - Timeout occurred.
+2025-02-18 10:59:40,218 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-18 10:59:45,433 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-18 10:59:52,324 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-18 14:55:24,728 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 14:55:24,728 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 14:55:25,736 - INFO - Feedback: b''
+2025-02-18 14:55:28,737 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 14:55:29,347 - INFO - Feedback: b'0'
+2025-02-18 14:55:32,348 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 14:55:32,349 - INFO - Feedback: b'13'
+2025-02-18 14:55:32,349 - WARNING - Timeout occurred.
+2025-02-18 14:55:35,350 - INFO - Cycle: 1/5 completed.
+2025-02-18 14:55:35,350 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 14:55:35,350 - INFO - Feedback: b'0'
+2025-02-18 14:55:38,351 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 14:55:38,352 - INFO - Feedback: b'13'
+2025-02-18 14:55:38,352 - WARNING - Timeout occurred.
+2025-02-18 14:55:41,353 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 14:55:41,353 - INFO - Feedback: b'0'
+2025-02-18 14:55:44,354 - INFO - Cycle: 2/5 completed.
+2025-02-18 14:55:44,354 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 14:55:44,355 - INFO - Feedback: b'13'
+2025-02-18 14:55:44,355 - WARNING - Timeout occurred.
+2025-02-18 14:55:47,356 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 14:55:47,357 - INFO - Feedback: b'0'
+2025-02-18 14:55:50,357 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 14:55:50,358 - INFO - Feedback: b'13'
+2025-02-18 14:55:50,358 - WARNING - Timeout occurred.
+2025-02-18 14:55:53,359 - INFO - Cycle: 3/5 completed.
+2025-02-18 14:55:53,359 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 14:55:53,359 - INFO - Feedback: b'0'
+2025-02-18 14:55:56,360 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 14:55:56,361 - INFO - Feedback: b'13'
+2025-02-18 14:55:56,361 - WARNING - Timeout occurred.
+2025-02-18 14:55:59,361 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 14:55:59,362 - INFO - Feedback: b'0'
+2025-02-18 14:56:02,363 - INFO - Cycle: 4/5 completed.
+2025-02-18 14:56:02,364 - INFO - Sending command: p:1:b1:1:200:2:200:
+
+
+2025-02-18 14:56:02,365 - INFO - Feedback: b'13'
+2025-02-18 14:56:02,365 - WARNING - Timeout occurred.
+2025-02-18 14:56:05,366 - INFO - Sending command: p:1:b2:1:200:2:200:
+
+
+2025-02-18 14:56:05,367 - INFO - Feedback: b'0'
+2025-02-18 14:56:08,368 - INFO - Sending command: p:1:b3:1:200:2:200:
+
+
+2025-02-18 14:56:08,369 - INFO - Feedback: b'13'
+2025-02-18 14:56:08,369 - WARNING - Timeout occurred.
+2025-02-18 14:56:11,370 - INFO - Cycle: 5/5 completed.
+2025-02-18 14:56:11,474 - INFO - Serial connection closed.
+2025-02-18 14:56:11,475 - INFO - Total commands executed: 15
+2025-02-18 14:56:11,475 - INFO - Total errors encountered: 1
+2025-02-18 14:56:11,475 - INFO - Total timeouts encountered: 7
+2025-02-18 14:56:11,475 - INFO - Total cycles completed: 5
+2025-02-18 14:56:55,675 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 14:56:55,675 - INFO - Sending command: p:1:b1:1:200:5:200:
+
+
+2025-02-18 14:56:56,678 - INFO - Feedback: b''
+2025-02-18 14:57:01,679 - INFO - Sending command: p:1:b2:1:200:5:200:
+
+
+2025-02-18 14:57:01,680 - INFO - Feedback: b'0'
+2025-02-18 14:57:06,680 - INFO - Cycle: 1/1 completed.
+2025-02-18 14:57:06,798 - INFO - Serial connection closed.
+2025-02-18 14:57:06,798 - INFO - Total commands executed: 2
+2025-02-18 14:57:06,798 - INFO - Total errors encountered: 1
+2025-02-18 14:57:06,799 - INFO - Total timeouts encountered: 0
+2025-02-18 14:57:06,799 - INFO - Total cycles completed: 1
+2025-02-18 14:57:10,140 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 14:57:10,140 - INFO - Sending command: p:1:b1:1:200:5:200:
+
+
+2025-02-18 14:57:11,142 - INFO - Feedback: b''
+2025-02-18 14:57:16,143 - INFO - Sending command: p:1:b2:1:200:5:200:
+
+
+2025-02-18 14:57:16,144 - INFO - Feedback: b'0'
+2025-02-18 14:57:21,144 - INFO - Cycle: 1/1 completed.
+2025-02-18 14:57:21,248 - INFO - Serial connection closed.
+2025-02-18 14:57:21,248 - INFO - Total commands executed: 2
+2025-02-18 14:57:21,248 - INFO - Total errors encountered: 1
+2025-02-18 14:57:21,248 - INFO - Total timeouts encountered: 0
+2025-02-18 14:57:21,248 - INFO - Total cycles completed: 1
+2025-02-18 14:58:05,739 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 14:58:05,739 - INFO - Sending command: p:1:b1:1:200:5:200:
+
+
+2025-02-18 14:58:06,738 - INFO - Feedback: b''
+2025-02-18 14:58:12,775 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 14:58:12,776 - INFO - Sending command: p:1:b1:1:200:5:200:
+
+
+2025-02-18 14:58:13,789 - INFO - Feedback: b''
+2025-02-18 14:58:18,790 - INFO - Sending command: p:1:b2:1:200:5:200:
+
+
+2025-02-18 14:58:18,791 - INFO - Feedback: b'0'
+2025-02-18 15:01:18,791 - INFO - Connected to COM5 at 115200 baud.
+2025-02-18 15:01:18,791 - INFO - Sending command: p:1:b4:1:200:5:200:
+
+
+2025-02-18 15:01:19,794 - INFO - Feedback: b''
+2025-02-18 15:01:24,795 - INFO - Cycle: 1/3 completed.
+2025-02-18 15:01:24,795 - INFO - Sending command: p:1:b4:1:200:5:200:
+
+
+2025-02-18 15:01:24,795 - INFO - Feedback: b'0'
+2025-02-18 15:01:29,796 - INFO - Cycle: 2/3 completed.
+2025-02-18 15:01:29,796 - INFO - Sending command: p:1:b4:1:200:5:200:
+
+
+2025-02-18 15:01:29,798 - INFO - Feedback: b'13'
+2025-02-18 15:01:29,798 - WARNING - Timeout occurred.
+2025-02-18 15:01:34,799 - INFO - Cycle: 3/3 completed.
+2025-02-18 15:01:34,914 - INFO - Serial connection closed.
+2025-02-18 15:01:34,915 - INFO - Total commands executed: 3
+2025-02-18 15:01:34,915 - INFO - Total errors encountered: 1
+2025-02-18 15:01:34,915 - INFO - Total timeouts encountered: 1
+2025-02-18 15:01:34,915 - INFO - Total cycles completed: 3

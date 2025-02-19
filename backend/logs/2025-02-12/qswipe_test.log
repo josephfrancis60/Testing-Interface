@@ -1,0 +1,891 @@
+2025-02-12 09:37:53,930 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 09:49:07,970 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:49:07,970 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:49:07,979 - INFO - Feedback: b'4'
+2025-02-12 09:49:07,979 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:49:12,980 - INFO - Sending command: i:
+
+2025-02-12 09:49:12,981 - INFO - Feedback: b'0'
+2025-02-12 09:49:12,981 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:49:17,985 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:49:18,100 - INFO - Serial connection closed.
+2025-02-12 09:49:18,100 - INFO - Total cycles completed: 2
+2025-02-12 09:49:18,103 - INFO - Total errors encountered: 2
+2025-02-12 09:49:18,104 - INFO - Total timeouts encountered: 0
+2025-02-12 09:49:34,536 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:49:34,537 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:49:34,547 - INFO - Feedback: b'4'
+2025-02-12 09:49:34,547 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:49:44,548 - INFO - Sending command: i:
+
+2025-02-12 09:49:44,549 - INFO - Feedback: b'0'
+2025-02-12 09:49:44,549 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:49:54,550 - INFO - Cycle: 1/2 completed.
+2025-02-12 09:49:54,550 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:49:54,551 - INFO - Feedback: b'0'
+2025-02-12 09:49:54,551 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:50:04,552 - INFO - Sending command: i:
+
+2025-02-12 09:50:04,553 - INFO - Feedback: b'4'
+2025-02-12 09:50:04,554 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:50:14,555 - INFO - Cycle: 2/2 completed.
+2025-02-12 09:50:14,664 - INFO - Serial connection closed.
+2025-02-12 09:50:14,665 - INFO - Total cycles completed: 4
+2025-02-12 09:50:14,665 - INFO - Total errors encountered: 4
+2025-02-12 09:50:14,665 - INFO - Total timeouts encountered: 0
+2025-02-12 09:50:30,063 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:50:30,063 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:50:30,072 - INFO - Feedback: b'4'
+2025-02-12 09:50:30,073 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:50:35,073 - INFO - Sending command: i:
+
+2025-02-12 09:50:35,074 - INFO - Feedback: b'0'
+2025-02-12 09:50:35,074 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:50:40,075 - INFO - Cycle: 1/2 completed.
+2025-02-12 09:50:40,075 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:50:41,077 - INFO - Feedback: b''
+2025-02-12 09:50:41,077 - ERROR - Received empty feedback.
+2025-02-12 09:50:46,078 - INFO - Sending command: i:
+
+2025-02-12 09:50:46,078 - INFO - Feedback: b'0'
+2025-02-12 09:50:46,079 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:50:51,079 - INFO - Cycle: 2/2 completed.
+2025-02-12 09:50:51,197 - INFO - Serial connection closed.
+2025-02-12 09:50:51,198 - INFO - Total cycles completed: 4
+2025-02-12 09:50:51,198 - INFO - Total errors encountered: 4
+2025-02-12 09:50:51,198 - INFO - Total timeouts encountered: 0
+2025-02-12 09:50:54,820 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:50:54,821 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:50:54,829 - INFO - Feedback: b'4'
+2025-02-12 09:50:54,830 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:50:59,830 - INFO - Sending command: i:
+
+2025-02-12 09:50:59,831 - INFO - Feedback: b'0'
+2025-02-12 09:50:59,831 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:51:28,860 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:51:28,860 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:51:28,869 - INFO - Feedback: b'4'
+2025-02-12 09:51:28,869 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:51:33,870 - INFO - Sending command: i:
+
+2025-02-12 09:51:33,871 - INFO - Feedback: b'0'
+2025-02-12 09:51:33,871 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:51:38,872 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:51:39,873 - INFO - Feedback: b''
+2025-02-12 09:51:39,874 - ERROR - Received empty feedback.
+2025-02-12 09:51:44,874 - INFO - Cycle: 1/2 completed.
+2025-02-12 09:51:44,875 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:51:44,876 - INFO - Feedback: b'0'
+2025-02-12 09:51:44,876 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:51:49,876 - INFO - Sending command: i:
+
+2025-02-12 09:51:49,878 - INFO - Feedback: b'3'
+2025-02-12 09:51:49,878 - ERROR - Unexpected feedback code: 3
+2025-02-12 09:51:54,878 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:51:54,880 - INFO - Feedback: b'0'
+2025-02-12 09:51:54,880 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:51:59,880 - INFO - Cycle: 2/2 completed.
+2025-02-12 09:52:00,003 - INFO - Serial connection closed.
+2025-02-12 09:52:00,003 - INFO - Total cycles completed: 6
+2025-02-12 09:52:00,004 - INFO - Total errors encountered: 6
+2025-02-12 09:52:00,004 - INFO - Total timeouts encountered: 0
+2025-02-12 09:52:13,686 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:52:13,687 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:52:13,697 - INFO - Feedback: b'4'
+2025-02-12 09:52:13,697 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:52:19,698 - INFO - Sending command: i:
+
+2025-02-12 09:52:19,699 - INFO - Feedback: b'0'
+2025-02-12 09:52:19,699 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:52:25,700 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:52:25,729 - INFO - Feedback: b'0'
+2025-02-12 09:52:25,730 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:52:58,681 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:52:58,681 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:52:58,691 - INFO - Feedback: b'4'
+2025-02-12 09:52:58,691 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:53:04,691 - INFO - Sending command: i:
+
+2025-02-12 09:53:04,692 - INFO - Feedback: b'0'
+2025-02-12 09:53:04,692 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:53:10,692 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:53:10,723 - INFO - Feedback: b'0'
+2025-02-12 09:53:10,723 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:53:16,724 - INFO - Cycle: 1/2 completed.
+2025-02-12 09:53:16,724 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:53:16,724 - INFO - Feedback: b'3'
+2025-02-12 09:53:16,725 - ERROR - Unexpected feedback code: 3
+2025-02-12 09:53:22,725 - INFO - Sending command: i:
+
+2025-02-12 09:53:22,726 - INFO - Feedback: b'0'
+2025-02-12 09:53:22,726 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:53:28,726 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:53:28,727 - INFO - Feedback: b'4'
+2025-02-12 09:53:28,727 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:53:34,728 - INFO - Cycle: 2/2 completed.
+2025-02-12 09:53:34,843 - INFO - Serial connection closed.
+2025-02-12 09:53:34,844 - INFO - Total cycles completed: 6
+2025-02-12 09:53:34,844 - INFO - Total errors encountered: 6
+2025-02-12 09:53:34,844 - INFO - Total timeouts encountered: 0
+2025-02-12 09:54:04,418 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:54:04,418 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:54:04,427 - INFO - Feedback: b'4'
+2025-02-12 09:54:04,427 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:54:09,428 - INFO - Sending command: i:
+
+2025-02-12 09:54:09,430 - INFO - Feedback: b'0'
+2025-02-12 09:54:09,430 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:54:14,431 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:54:15,432 - INFO - Feedback: b''
+2025-02-12 09:54:15,433 - ERROR - Received empty feedback.
+2025-02-12 09:54:20,433 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:54:20,551 - INFO - Serial connection closed.
+2025-02-12 09:54:20,551 - INFO - Total cycles completed: 3
+2025-02-12 09:54:20,551 - INFO - Total errors encountered: 3
+2025-02-12 09:54:20,551 - INFO - Total timeouts encountered: 0
+2025-02-12 09:54:37,391 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:54:37,392 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:54:37,400 - INFO - Feedback: b'4'
+2025-02-12 09:54:37,401 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:54:47,401 - INFO - Sending command: i:
+
+2025-02-12 09:54:47,402 - INFO - Feedback: b'0'
+2025-02-12 09:54:47,403 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:54:57,403 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:54:57,404 - INFO - Feedback: b'0'
+2025-02-12 09:54:57,404 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:55:07,406 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:55:07,518 - INFO - Serial connection closed.
+2025-02-12 09:55:07,518 - INFO - Total cycles completed: 3
+2025-02-12 09:55:07,518 - INFO - Total errors encountered: 3
+2025-02-12 09:55:07,519 - INFO - Total timeouts encountered: 0
+2025-02-12 09:55:11,785 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:55:11,786 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:55:11,795 - INFO - Feedback: b'4'
+2025-02-12 09:55:11,795 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:55:21,796 - INFO - Sending command: i:
+
+2025-02-12 09:55:21,797 - INFO - Feedback: b'0'
+2025-02-12 09:55:21,797 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:55:31,798 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:55:31,799 - INFO - Feedback: b'0'
+2025-02-12 09:55:31,799 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:55:41,799 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:55:41,921 - INFO - Serial connection closed.
+2025-02-12 09:55:41,921 - INFO - Total cycles completed: 3
+2025-02-12 09:55:41,921 - INFO - Total errors encountered: 3
+2025-02-12 09:55:41,922 - INFO - Total timeouts encountered: 0
+2025-02-12 09:57:27,206 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:57:27,207 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:57:27,217 - INFO - Feedback: b'4'
+2025-02-12 09:57:27,218 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:57:37,218 - INFO - Sending command: i:
+
+2025-02-12 09:57:37,219 - INFO - Feedback: b'0'
+2025-02-12 09:57:37,219 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:57:47,220 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:57:47,221 - INFO - Feedback: b'0'
+2025-02-12 09:57:47,222 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:57:57,223 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:57:57,341 - INFO - Serial connection closed.
+2025-02-12 09:57:57,342 - INFO - Total cycles completed: 3
+2025-02-12 09:57:57,342 - INFO - Total errors encountered: 3
+2025-02-12 09:57:57,342 - INFO - Total timeouts encountered: 0
+2025-02-12 09:58:15,125 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:58:15,125 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 09:58:15,134 - INFO - Feedback: b'4'
+2025-02-12 09:58:15,135 - ERROR - Unexpected feedback code: 4
+2025-02-12 09:58:25,135 - INFO - Sending command: i:
+
+2025-02-12 09:58:25,136 - INFO - Feedback: b'0'
+2025-02-12 09:58:25,136 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:58:35,137 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 09:58:35,138 - INFO - Feedback: b'0'
+2025-02-12 09:58:35,138 - ERROR - Unexpected feedback code: 0
+2025-02-12 09:58:45,139 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:58:45,265 - INFO - Serial connection closed.
+2025-02-12 09:58:45,265 - INFO - Total cycles completed: 3
+2025-02-12 09:58:45,266 - INFO - Total errors encountered: 3
+2025-02-12 09:58:45,266 - INFO - Total timeouts encountered: 0
+2025-02-12 09:59:48,428 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 09:59:48,428 - INFO - Sending command: ["e:s:c:e:4:","i:","e:s:c:e:3:"]
+
+2025-02-12 09:59:48,438 - INFO - Feedback: b'13'
+2025-02-12 09:59:48,438 - ERROR - Unexpected feedback code: 13
+2025-02-12 09:59:51,440 - INFO - Cycle: 1/1 completed.
+2025-02-12 09:59:51,555 - INFO - Serial connection closed.
+2025-02-12 09:59:51,556 - INFO - Total cycles completed: 1
+2025-02-12 09:59:51,556 - INFO - Total errors encountered: 1
+2025-02-12 09:59:51,556 - INFO - Total timeouts encountered: 0
+2025-02-12 10:00:05,688 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 10:00:05,688 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 10:00:05,697 - INFO - Feedback: b'4'
+2025-02-12 10:00:05,697 - ERROR - Unexpected feedback code: 4
+2025-02-12 10:00:08,698 - INFO - Sending command: i:
+
+2025-02-12 10:00:09,704 - INFO - Feedback: b''
+2025-02-12 10:00:09,704 - ERROR - Received empty feedback.
+2025-02-12 10:00:12,705 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 10:00:12,706 - INFO - Feedback: b'0'
+2025-02-12 10:00:12,706 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:00:15,707 - INFO - Sending command: i:
+
+2025-02-12 10:00:16,273 - INFO - Feedback: b'0'
+2025-02-12 10:00:16,273 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:00:19,274 - INFO - Sending command: e:s:c:e:2:
+
+2025-02-12 10:00:19,275 - INFO - Feedback: b'3'
+2025-02-12 10:00:19,275 - ERROR - Unexpected feedback code: 3
+2025-02-12 10:00:22,276 - INFO - Sending command: i:
+
+2025-02-12 10:00:22,277 - INFO - Feedback: b'0'
+2025-02-12 10:00:22,277 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:00:25,278 - INFO - Sending command: e:s:c:e:1:
+
+2025-02-12 10:00:26,284 - INFO - Feedback: b''
+2025-02-12 10:00:26,284 - ERROR - Received empty feedback.
+2025-02-12 10:00:29,285 - INFO - Sending command: i:
+
+2025-02-12 10:00:29,286 - INFO - Feedback: b'0'
+2025-02-12 10:00:29,286 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:00:32,287 - INFO - Cycle: 1/1 completed.
+2025-02-12 10:00:32,396 - INFO - Serial connection closed.
+2025-02-12 10:00:32,397 - INFO - Total cycles completed: 8
+2025-02-12 10:00:32,397 - INFO - Total errors encountered: 8
+2025-02-12 10:00:32,397 - INFO - Total timeouts encountered: 0
+2025-02-12 10:01:15,042 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 10:01:15,043 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 10:01:15,052 - INFO - Feedback: b'4'
+2025-02-12 10:01:15,052 - ERROR - Unexpected feedback code: 4
+2025-02-12 10:01:20,053 - INFO - Sending command: i:
+
+2025-02-12 10:01:20,636 - INFO - Feedback: b'0'
+2025-02-12 10:01:20,637 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:01:25,637 - INFO - Cycle: 1/2 completed.
+2025-02-12 10:01:25,638 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 10:01:26,639 - INFO - Feedback: b''
+2025-02-12 10:01:26,639 - ERROR - Received empty feedback.
+2025-02-12 10:01:31,640 - INFO - Sending command: i:
+
+2025-02-12 10:01:31,641 - INFO - Feedback: b'0'
+2025-02-12 10:01:31,641 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:01:36,642 - INFO - Cycle: 2/2 completed.
+2025-02-12 10:01:36,759 - INFO - Serial connection closed.
+2025-02-12 10:01:36,759 - INFO - Total cycles completed: 4
+2025-02-12 10:01:36,759 - INFO - Total errors encountered: 4
+2025-02-12 10:01:36,759 - INFO - Total timeouts encountered: 0
+2025-02-12 10:01:47,179 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 10:01:47,179 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 10:01:47,188 - INFO - Feedback: b'4'
+2025-02-12 10:01:47,188 - ERROR - Unexpected feedback code: 4
+2025-02-12 10:01:52,188 - INFO - Sending command: i:
+
+2025-02-12 10:01:52,190 - INFO - Feedback: b'0'
+2025-02-12 10:01:52,190 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:01:57,191 - INFO - Cycle: 1/2 completed.
+2025-02-12 10:01:57,191 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 10:01:58,192 - INFO - Feedback: b''
+2025-02-12 10:01:58,192 - ERROR - Received empty feedback.
+2025-02-12 10:02:03,193 - INFO - Sending command: i:
+
+2025-02-12 10:02:03,193 - INFO - Feedback: b'0'
+2025-02-12 10:02:03,194 - ERROR - Unexpected feedback code: 0
+2025-02-12 10:24:39,792 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 11:08:46,891 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 11:17:37,558 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 11:19:14,264 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 11:23:25,793 - ERROR - Failed to connect to COM6: could not open port 'COM6': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 11:23:33,134 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 12:36:39,176 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 12:37:54,387 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 12:39:55,620 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 12:54:37,337 - ERROR - Failed to connect to : could not open port '': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2025-02-12 12:55:04,708 - ERROR - Failed to connect to : could not open port '': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2025-02-12 12:55:17,692 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 14:32:29,166 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:26:56,181 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:01,029 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:02,269 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:03,579 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:29,838 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:35,366 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:39,180 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:27:42,281 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:36:40,966 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:36:49,299 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:37:00,447 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:37:39,078 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:52:09,202 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:55:49,587 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 15:58:37,066 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:05:47,132 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:05:53,393 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:09:13,364 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:13:58,949 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:14:57,131 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:15:21,534 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 16:15:51,625 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 17:03:14,269 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 17:09:28,160 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 17:09:59,819 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:09:59,819 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:09:59,841 - INFO - Feedback: b'4'
+2025-02-12 17:09:59,841 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:10:02,842 - INFO - Sending command: i:
+
+2025-02-12 17:10:03,845 - INFO - Feedback: b''
+2025-02-12 17:10:03,845 - ERROR - Received empty feedback.
+2025-02-12 17:10:06,846 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:10:06,847 - INFO - Feedback: b'0'
+2025-02-12 17:10:06,847 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:10:09,848 - INFO - Sending command: i:
+
+2025-02-12 17:10:09,849 - INFO - Feedback: b''
+2025-02-12 17:10:09,849 - ERROR - Received empty feedback.
+2025-02-12 17:10:12,849 - INFO - Sending command: e:s:c:e:2:
+
+2025-02-12 17:10:12,850 - INFO - Feedback: b'0'
+2025-02-12 17:10:12,850 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:10:15,851 - INFO - Sending command: i:
+
+2025-02-12 17:10:15,852 - INFO - Feedback: b''
+2025-02-12 17:10:15,852 - ERROR - Received empty feedback.
+2025-02-12 17:10:18,856 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:10:18,970 - INFO - Serial connection closed.
+2025-02-12 17:10:18,970 - INFO - Total cycles completed: 6
+2025-02-12 17:10:18,970 - INFO - Total errors encountered: 6
+2025-02-12 17:10:18,970 - INFO - Total timeouts encountered: 0
+2025-02-12 17:11:10,890 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:11:10,890 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:11:10,899 - INFO - Feedback: b'4'
+2025-02-12 17:11:10,900 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:11:13,900 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:11:13,901 - INFO - Feedback: b'0'
+2025-02-12 17:11:13,901 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:11:16,902 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:11:17,031 - INFO - Serial connection closed.
+2025-02-12 17:11:17,031 - INFO - Total cycles completed: 2
+2025-02-12 17:11:17,031 - INFO - Total errors encountered: 2
+2025-02-12 17:11:17,031 - INFO - Total timeouts encountered: 0
+2025-02-12 17:11:36,886 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:11:36,886 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:11:36,897 - INFO - Feedback: b'4'
+2025-02-12 17:11:36,897 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:11:39,898 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:11:40,905 - INFO - Feedback: b''
+2025-02-12 17:11:40,906 - ERROR - Received empty feedback.
+2025-02-12 17:11:43,906 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:11:43,907 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:11:43,908 - INFO - Feedback: b'0'
+2025-02-12 17:11:43,908 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:11:46,909 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:11:46,910 - INFO - Feedback: b''
+2025-02-12 17:11:46,910 - ERROR - Received empty feedback.
+2025-02-12 17:11:49,911 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:11:50,031 - INFO - Serial connection closed.
+2025-02-12 17:11:50,032 - INFO - Total cycles completed: 4
+2025-02-12 17:11:50,032 - INFO - Total errors encountered: 4
+2025-02-12 17:11:50,032 - INFO - Total timeouts encountered: 0
+2025-02-12 17:12:15,695 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:12:15,695 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:12:15,704 - INFO - Feedback: b'4'
+2025-02-12 17:12:15,704 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:12:20,705 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:12:20,705 - INFO - Feedback: b'0'
+2025-02-12 17:12:20,706 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:12:25,707 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:12:25,707 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:12:25,708 - INFO - Feedback: b''
+2025-02-12 17:12:25,708 - ERROR - Received empty feedback.
+2025-02-12 17:12:30,709 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:12:30,710 - INFO - Feedback: b'3'
+2025-02-12 17:12:30,710 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:12:35,711 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:12:35,823 - INFO - Serial connection closed.
+2025-02-12 17:12:35,824 - INFO - Total cycles completed: 4
+2025-02-12 17:12:35,824 - INFO - Total errors encountered: 4
+2025-02-12 17:12:35,825 - INFO - Total timeouts encountered: 0
+2025-02-12 17:12:54,303 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:12:54,303 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:12:54,312 - INFO - Feedback: b'4'
+2025-02-12 17:12:54,312 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:12:59,313 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:12:59,314 - INFO - Feedback: b'0'
+2025-02-12 17:12:59,314 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:13:13,129 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:13:13,129 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:13:13,138 - INFO - Feedback: b'4'
+2025-02-12 17:13:13,138 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:13:18,139 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:13:18,140 - INFO - Feedback: b'0'
+2025-02-12 17:13:18,140 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:13:23,141 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:13:23,142 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:13:23,143 - INFO - Feedback: b''
+2025-02-12 17:13:23,143 - ERROR - Received empty feedback.
+2025-02-12 17:13:28,144 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:13:28,144 - INFO - Feedback: b'3'
+2025-02-12 17:13:28,145 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:13:33,146 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:13:33,261 - INFO - Serial connection closed.
+2025-02-12 17:13:33,262 - INFO - Total cycles completed: 4
+2025-02-12 17:13:33,263 - INFO - Total errors encountered: 4
+2025-02-12 17:13:33,263 - INFO - Total timeouts encountered: 0
+2025-02-12 17:14:10,891 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:14:10,891 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:14:10,900 - INFO - Feedback: b'4'
+2025-02-12 17:14:10,900 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:14:13,900 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:14:14,011 - INFO - Serial connection closed.
+2025-02-12 17:14:14,012 - INFO - Total cycles completed: 1
+2025-02-12 17:14:14,012 - INFO - Total errors encountered: 1
+2025-02-12 17:14:14,012 - INFO - Total timeouts encountered: 0
+2025-02-12 17:14:28,497 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:14:28,498 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:14:28,506 - INFO - Feedback: b'4'
+2025-02-12 17:14:28,506 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:14:33,507 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:14:33,508 - INFO - Feedback: b'0'
+2025-02-12 17:14:33,508 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:14:38,509 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:14:38,509 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:14:38,510 - INFO - Feedback: b''
+2025-02-12 17:14:38,510 - ERROR - Received empty feedback.
+2025-02-12 17:14:43,511 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:14:43,512 - INFO - Feedback: b'3'
+2025-02-12 17:14:43,512 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:14:48,513 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:14:48,628 - INFO - Serial connection closed.
+2025-02-12 17:14:48,628 - INFO - Total cycles completed: 4
+2025-02-12 17:14:48,628 - INFO - Total errors encountered: 4
+2025-02-12 17:14:48,628 - INFO - Total timeouts encountered: 0
+2025-02-12 17:18:12,432 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:18:12,433 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:18:12,449 - INFO - Feedback: b'4'
+2025-02-12 17:18:12,450 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:18:17,450 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:18:17,451 - INFO - Feedback: b'0'
+2025-02-12 17:18:17,451 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:18:22,452 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:18:22,453 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:18:22,453 - INFO - Feedback: b''
+2025-02-12 17:18:22,453 - ERROR - Received empty feedback.
+2025-02-12 17:18:27,454 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:18:27,454 - INFO - Feedback: b'3'
+2025-02-12 17:18:27,455 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:18:32,455 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:18:32,571 - INFO - Serial connection closed.
+2025-02-12 17:18:32,572 - INFO - Total cycles completed: 4
+2025-02-12 17:18:32,572 - INFO - Total errors encountered: 4
+2025-02-12 17:18:32,573 - INFO - Total timeouts encountered: 0
+2025-02-12 17:21:39,234 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:21:39,234 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:21:39,243 - INFO - Feedback: b'4'
+2025-02-12 17:21:39,243 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:21:44,244 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:21:44,244 - INFO - Feedback: b'0'
+2025-02-12 17:21:44,245 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:21:49,245 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:21:49,246 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:21:49,246 - INFO - Feedback: b''
+2025-02-12 17:21:49,246 - ERROR - Received empty feedback.
+2025-02-12 17:21:54,247 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:21:54,248 - INFO - Feedback: b'3'
+2025-02-12 17:21:54,248 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:21:59,249 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:21:59,375 - INFO - Serial connection closed.
+2025-02-12 17:21:59,375 - INFO - Total cycles completed: 4
+2025-02-12 17:21:59,376 - INFO - Total errors encountered: 4
+2025-02-12 17:21:59,376 - INFO - Total timeouts encountered: 0
+2025-02-12 17:22:56,256 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:22:56,256 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:22:56,265 - INFO - Feedback: b'4'
+2025-02-12 17:22:56,266 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:22:59,266 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:23:00,272 - INFO - Feedback: b''
+2025-02-12 17:23:00,273 - ERROR - Received empty feedback.
+2025-02-12 17:23:03,274 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:23:03,274 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:23:03,275 - INFO - Feedback: b'0'
+2025-02-12 17:23:03,275 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:23:06,276 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:23:06,277 - INFO - Feedback: b''
+2025-02-12 17:23:06,277 - ERROR - Received empty feedback.
+2025-02-12 17:23:09,278 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:23:09,391 - INFO - Serial connection closed.
+2025-02-12 17:23:09,392 - INFO - Total cycles completed: 4
+2025-02-12 17:23:09,392 - INFO - Total errors encountered: 4
+2025-02-12 17:23:09,392 - INFO - Total timeouts encountered: 0
+2025-02-12 17:23:33,984 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:23:33,984 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:23:33,992 - INFO - Feedback: b'4'
+2025-02-12 17:23:33,992 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:23:36,993 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:23:38,000 - INFO - Feedback: b''
+2025-02-12 17:23:38,001 - ERROR - Received empty feedback.
+2025-02-12 17:23:41,001 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:23:41,002 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:23:41,002 - INFO - Feedback: b'0'
+2025-02-12 17:23:41,002 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:23:44,003 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:23:44,004 - INFO - Feedback: b''
+2025-02-12 17:23:44,005 - ERROR - Received empty feedback.
+2025-02-12 17:23:47,005 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:23:47,133 - INFO - Serial connection closed.
+2025-02-12 17:23:47,133 - INFO - Total cycles completed: 4
+2025-02-12 17:23:47,133 - INFO - Total errors encountered: 4
+2025-02-12 17:23:47,133 - INFO - Total timeouts encountered: 0
+2025-02-12 17:23:53,248 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:23:53,249 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:23:53,258 - INFO - Feedback: b'4'
+2025-02-12 17:23:53,258 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:23:56,259 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:23:57,272 - INFO - Feedback: b''
+2025-02-12 17:23:57,273 - ERROR - Received empty feedback.
+2025-02-12 17:24:00,273 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:24:00,274 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:24:00,274 - INFO - Feedback: b'0'
+2025-02-12 17:24:00,274 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:24:03,275 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:24:03,276 - INFO - Feedback: b''
+2025-02-12 17:24:03,276 - ERROR - Received empty feedback.
+2025-02-12 17:24:06,277 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:24:06,391 - INFO - Serial connection closed.
+2025-02-12 17:24:06,391 - INFO - Total cycles completed: 4
+2025-02-12 17:24:06,391 - INFO - Total errors encountered: 4
+2025-02-12 17:24:06,391 - INFO - Total timeouts encountered: 0
+2025-02-12 17:24:26,922 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:24:26,923 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:26,932 - INFO - Feedback: b'13'
+2025-02-12 17:24:26,932 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:24:31,934 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:24:31,934 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:31,935 - INFO - Feedback: b''
+2025-02-12 17:24:31,935 - ERROR - Received empty feedback.
+2025-02-12 17:24:36,936 - INFO - Cycle: 2/3 completed.
+2025-02-12 17:24:36,937 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:36,937 - INFO - Feedback: b'13'
+2025-02-12 17:24:36,938 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:24:41,938 - INFO - Cycle: 3/3 completed.
+2025-02-12 17:24:42,041 - INFO - Serial connection closed.
+2025-02-12 17:24:42,041 - INFO - Total cycles completed: 3
+2025-02-12 17:24:42,042 - INFO - Total errors encountered: 3
+2025-02-12 17:24:42,042 - INFO - Total timeouts encountered: 0
+2025-02-12 17:24:44,124 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:24:44,124 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:44,134 - INFO - Feedback: b'13'
+2025-02-12 17:24:44,134 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:24:49,136 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:24:49,136 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:49,137 - INFO - Feedback: b''
+2025-02-12 17:24:49,137 - ERROR - Received empty feedback.
+2025-02-12 17:24:54,137 - INFO - Cycle: 2/3 completed.
+2025-02-12 17:24:54,138 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:24:54,139 - INFO - Feedback: b'13'
+2025-02-12 17:24:54,139 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:25:04,532 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:25:04,532 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:25:04,541 - INFO - Feedback: b'13'
+2025-02-12 17:25:04,541 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:25:09,543 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:25:09,544 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:25:09,544 - INFO - Feedback: b''
+2025-02-12 17:25:09,544 - ERROR - Received empty feedback.
+2025-02-12 17:25:18,824 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:25:18,825 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:25:18,834 - INFO - Feedback: b'13'
+2025-02-12 17:25:18,834 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:25:23,835 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:25:23,836 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:25:23,837 - INFO - Feedback: b''
+2025-02-12 17:25:23,837 - ERROR - Received empty feedback.
+2025-02-12 17:26:10,936 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:26:10,937 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:26:10,945 - INFO - Feedback: b'4'
+2025-02-12 17:26:10,946 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:26:13,947 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:26:14,948 - INFO - Feedback: b''
+2025-02-12 17:26:14,948 - ERROR - Received empty feedback.
+2025-02-12 17:26:17,949 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:26:17,949 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:26:17,950 - INFO - Feedback: b'0'
+2025-02-12 17:26:17,950 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:26:20,951 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:26:20,953 - INFO - Feedback: b''
+2025-02-12 17:26:20,953 - ERROR - Received empty feedback.
+2025-02-12 17:26:23,954 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:26:24,071 - INFO - Serial connection closed.
+2025-02-12 17:26:24,072 - INFO - Total cycles completed: 4
+2025-02-12 17:26:24,072 - INFO - Total errors encountered: 4
+2025-02-12 17:26:24,072 - INFO - Total timeouts encountered: 0
+2025-02-12 17:26:36,005 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:26:36,006 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:26:36,014 - INFO - Feedback: b'4'
+2025-02-12 17:26:36,014 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:26:39,015 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:26:40,017 - INFO - Feedback: b''
+2025-02-12 17:26:40,018 - ERROR - Received empty feedback.
+2025-02-12 17:26:43,018 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:26:43,018 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:26:43,019 - INFO - Feedback: b'0'
+2025-02-12 17:26:43,019 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:26:46,020 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:26:46,022 - INFO - Feedback: b''
+2025-02-12 17:26:46,023 - ERROR - Received empty feedback.
+2025-02-12 17:26:49,023 - INFO - Cycle: 2/3 completed.
+2025-02-12 17:26:49,024 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:26:49,024 - INFO - Feedback: b'3'
+2025-02-12 17:26:49,024 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:26:52,025 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:26:52,026 - INFO - Feedback: b'0'
+2025-02-12 17:26:52,027 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:26:55,028 - INFO - Cycle: 3/3 completed.
+2025-02-12 17:26:55,149 - INFO - Serial connection closed.
+2025-02-12 17:26:55,150 - INFO - Total cycles completed: 6
+2025-02-12 17:26:55,150 - INFO - Total errors encountered: 6
+2025-02-12 17:26:55,150 - INFO - Total timeouts encountered: 0
+2025-02-12 17:27:04,724 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:27:04,725 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:27:04,733 - INFO - Feedback: b'4'
+2025-02-12 17:27:04,733 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:27:07,734 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:27:08,741 - INFO - Feedback: b''
+2025-02-12 17:27:08,741 - ERROR - Received empty feedback.
+2025-02-12 17:27:11,742 - INFO - Cycle: 1/3 completed.
+2025-02-12 17:27:11,743 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:27:11,743 - INFO - Feedback: b'0'
+2025-02-12 17:27:11,744 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:27:14,744 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:27:14,745 - INFO - Feedback: b''
+2025-02-12 17:27:14,745 - ERROR - Received empty feedback.
+2025-02-12 17:27:17,746 - INFO - Cycle: 2/3 completed.
+2025-02-12 17:27:17,746 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:27:17,747 - INFO - Feedback: b'3'
+2025-02-12 17:27:17,747 - ERROR - Unexpected feedback code: 3
+2025-02-12 17:27:20,747 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:27:20,748 - INFO - Feedback: b'0'
+2025-02-12 17:27:20,749 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:27:23,749 - INFO - Cycle: 3/3 completed.
+2025-02-12 17:27:23,870 - INFO - Serial connection closed.
+2025-02-12 17:27:23,870 - INFO - Total cycles completed: 6
+2025-02-12 17:27:23,870 - INFO - Total errors encountered: 6
+2025-02-12 17:27:23,871 - INFO - Total timeouts encountered: 0
+2025-02-12 17:37:15,412 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 17:37:44,099 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:37:44,099 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:37:44,109 - INFO - Feedback: b'13'
+2025-02-12 17:37:44,110 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:37:47,111 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:37:47,111 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:37:47,112 - INFO - Feedback: b''
+2025-02-12 17:37:47,112 - ERROR - Received empty feedback.
+2025-02-12 17:37:50,113 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:37:50,229 - INFO - Serial connection closed.
+2025-02-12 17:37:50,229 - INFO - Total cycles completed: 2
+2025-02-12 17:37:50,229 - INFO - Total errors encountered: 2
+2025-02-12 17:37:50,230 - INFO - Total timeouts encountered: 0
+2025-02-12 17:38:12,153 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:38:12,154 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:38:12,162 - INFO - Feedback: b'13'
+2025-02-12 17:38:12,162 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:38:15,163 - INFO - Cycle: 1/2 completed.
+2025-02-12 17:38:15,164 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:38:15,164 - INFO - Feedback: b''
+2025-02-12 17:38:15,165 - ERROR - Received empty feedback.
+2025-02-12 17:38:18,166 - INFO - Cycle: 2/2 completed.
+2025-02-12 17:38:18,295 - INFO - Serial connection closed.
+2025-02-12 17:38:18,295 - INFO - Total cycles completed: 2
+2025-02-12 17:38:18,295 - INFO - Total errors encountered: 2
+2025-02-12 17:38:18,295 - INFO - Total timeouts encountered: 0
+2025-02-12 17:39:20,913 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:39:20,913 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:39:20,922 - INFO - Feedback: b'4'
+2025-02-12 17:39:20,923 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:39:23,924 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:39:24,925 - INFO - Feedback: b''
+2025-02-12 17:39:24,926 - ERROR - Received empty feedback.
+2025-02-12 17:39:27,927 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:39:28,039 - INFO - Serial connection closed.
+2025-02-12 17:39:28,040 - INFO - Total cycles completed: 2
+2025-02-12 17:39:28,040 - INFO - Total errors encountered: 2
+2025-02-12 17:39:28,040 - INFO - Total timeouts encountered: 0
+2025-02-12 17:51:21,787 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-12 17:51:56,570 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:51:56,570 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:51:56,579 - INFO - Feedback: b'4'
+2025-02-12 17:51:56,579 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:51:59,580 - INFO - Sending command: e:s:c:e:3:
+
+2025-02-12 17:52:00,593 - INFO - Feedback: b''
+2025-02-12 17:52:00,593 - ERROR - Received empty feedback.
+2025-02-12 17:52:03,594 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:52:03,707 - INFO - Serial connection closed.
+2025-02-12 17:52:03,707 - INFO - Total cycles completed: 2
+2025-02-12 17:52:03,707 - INFO - Total errors encountered: 2
+2025-02-12 17:52:03,707 - INFO - Total timeouts encountered: 0
+2025-02-12 17:52:29,986 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:52:29,986 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:52:29,995 - INFO - Feedback: b'13'
+2025-02-12 17:52:29,995 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:52:39,996 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:52:40,116 - INFO - Serial connection closed.
+2025-02-12 17:52:40,117 - INFO - Total cycles completed: 1
+2025-02-12 17:52:40,117 - INFO - Total errors encountered: 1
+2025-02-12 17:52:40,118 - INFO - Total timeouts encountered: 0
+2025-02-12 17:52:53,968 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:52:53,968 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:52:53,978 - INFO - Feedback: b'13'
+2025-02-12 17:52:53,979 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:53:03,980 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:53:04,100 - INFO - Serial connection closed.
+2025-02-12 17:53:04,100 - INFO - Total cycles completed: 1
+2025-02-12 17:53:04,100 - INFO - Total errors encountered: 1
+2025-02-12 17:53:04,101 - INFO - Total timeouts encountered: 0
+2025-02-12 17:53:17,126 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:53:17,126 - INFO - Sending command: ["e:s:c:e:4:","e:s:c:e:3:"]
+
+2025-02-12 17:53:17,136 - INFO - Feedback: b'13'
+2025-02-12 17:53:17,136 - ERROR - Unexpected feedback code: 13
+2025-02-12 17:53:27,137 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:53:27,259 - INFO - Serial connection closed.
+2025-02-12 17:53:27,259 - INFO - Total cycles completed: 1
+2025-02-12 17:53:27,260 - INFO - Total errors encountered: 1
+2025-02-12 17:53:27,260 - INFO - Total timeouts encountered: 0
+2025-02-12 17:54:40,120 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:54:40,121 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:54:40,130 - INFO - Feedback: b'4'
+2025-02-12 17:54:40,130 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:54:50,131 - INFO - Sending command: i:
+
+2025-02-12 17:54:50,131 - INFO - Feedback: b'0'
+2025-02-12 17:54:50,132 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:55:00,132 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:55:00,247 - INFO - Serial connection closed.
+2025-02-12 17:55:00,247 - INFO - Total cycles completed: 2
+2025-02-12 17:55:00,248 - INFO - Total errors encountered: 2
+2025-02-12 17:55:00,248 - INFO - Total timeouts encountered: 0
+2025-02-12 17:55:05,073 - INFO - Connected to COM3 at 115200 baud.
+2025-02-12 17:55:05,074 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-12 17:55:05,083 - INFO - Feedback: b'4'
+2025-02-12 17:55:05,083 - ERROR - Unexpected feedback code: 4
+2025-02-12 17:55:15,084 - INFO - Sending command: i:
+
+2025-02-12 17:55:15,084 - INFO - Feedback: b'0'
+2025-02-12 17:55:15,085 - ERROR - Unexpected feedback code: 0
+2025-02-12 17:55:25,085 - INFO - Cycle: 1/1 completed.
+2025-02-12 17:55:25,209 - INFO - Serial connection closed.
+2025-02-12 17:55:25,210 - INFO - Total cycles completed: 2
+2025-02-12 17:55:25,210 - INFO - Total errors encountered: 2
+2025-02-12 17:55:25,211 - INFO - Total timeouts encountered: 0

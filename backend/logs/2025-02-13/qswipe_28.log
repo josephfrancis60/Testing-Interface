@@ -1,0 +1,6 @@
+2025-02-13 16:17:31,868 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 16:17:33,106 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 16:17:33,965 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 16:17:34,903 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 16:17:35,929 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-13 16:17:36,709 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

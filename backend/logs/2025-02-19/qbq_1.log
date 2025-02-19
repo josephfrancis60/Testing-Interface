@@ -1,0 +1,5 @@
+2025-02-19 11:25:31,731 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-19 11:25:37,002 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-19 11:31:04,254 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-19 12:08:51,491 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-19 12:08:52,953 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

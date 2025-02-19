@@ -1,0 +1,46 @@
+2025-02-14 11:56:51,937 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-14 12:29:15,720 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-14 12:30:31,741 - INFO - Connected to COM3 at 115200 baud.
+2025-02-14 12:30:31,742 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-14 12:30:31,753 - INFO - Feedback: b'4'
+2025-02-14 12:30:31,753 - ERROR - Unexpected feedback code: 4
+2025-02-14 12:30:41,753 - INFO - Sending command: i:
+
+2025-02-14 12:30:41,754 - INFO - Feedback: b'0'
+2025-02-14 12:30:41,755 - ERROR - Unexpected feedback code: 0
+2025-02-14 12:30:51,762 - INFO - Cycle: 1/2 completed.
+2025-02-14 12:30:51,762 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-14 12:30:51,763 - INFO - Feedback: b''
+2025-02-14 12:30:51,764 - ERROR - Received empty feedback.
+2025-02-14 12:31:23,897 - INFO - Connected to COM3 at 115200 baud.
+2025-02-14 12:31:23,898 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-14 12:31:23,908 - INFO - Feedback: b'4'
+2025-02-14 12:31:23,908 - ERROR - Unexpected feedback code: 4
+2025-02-14 12:31:33,909 - INFO - Sending command: i:
+
+2025-02-14 12:31:33,910 - INFO - Feedback: b'0'
+2025-02-14 12:31:33,910 - ERROR - Unexpected feedback code: 0
+2025-02-14 12:31:43,911 - INFO - Cycle: 1/1 completed.
+2025-02-14 12:31:44,027 - INFO - Serial connection closed.
+2025-02-14 12:31:44,027 - INFO - Total cycles completed: 2
+2025-02-14 12:31:44,027 - INFO - Total errors encountered: 2
+2025-02-14 12:31:44,028 - INFO - Total timeouts encountered: 0
+2025-02-14 12:38:23,556 - ERROR - Failed to connect to COM3: could not open port 'COM3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-14 12:59:05,541 - INFO - Connected to COM3 at 115200 baud.
+2025-02-14 12:59:05,541 - INFO - Sending command: e:s:c:e:4:
+
+2025-02-14 12:59:05,553 - INFO - Feedback: b'4'
+2025-02-14 12:59:05,553 - ERROR - Unexpected feedback code: 4
+2025-02-14 12:59:15,553 - INFO - Sending command: i:
+
+2025-02-14 12:59:15,555 - INFO - Feedback: b'0'
+2025-02-14 12:59:15,555 - ERROR - Unexpected feedback code: 0
+2025-02-14 12:59:25,555 - INFO - Sending command: i:
+
+2025-02-14 12:59:25,556 - INFO - Feedback: b''
+2025-02-14 12:59:25,556 - ERROR - Received empty feedback.
+2025-02-14 15:05:54,977 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-14 15:05:57,837 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
