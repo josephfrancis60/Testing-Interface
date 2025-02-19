@@ -426,7 +426,7 @@ useEffect(() => {
               <Button 
                 type="submit" 
                 variant="contained" 
-                sx={{ mt: 2, textTransform: 'none', maxWidth: '1000px', }}
+                sx={{ mt: 2, textTransform: 'none', maxWidth: '1000px', backgroundColor:'#3391ff', color:'#fff' }}
                 
               >
                 Save Changes
@@ -466,8 +466,8 @@ useEffect(() => {
             color="error"
             fullWidth
             onClick={() => onStop(instance.id)}
-            disabled={instance.status !== 'running'} // Use instance.status for button state
-            sx={{ textTransform:'none', backgroundColor:'#cde5fa', color:'#36454F' }}
+            // disabled={instance.status !== 'running'} // Use instance.status for button state
+            sx={{ textTransform:'none', background: "linear-gradient(to bottom right, #e9f3fc, #cde5fa)", color:'#36454F' }}
           >
             Stop
           </Button>

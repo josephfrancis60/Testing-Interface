@@ -20,6 +20,8 @@ import {
   DialogActions,
   TextField,
   ListSubheader,
+  Grid2,
+  Divider,
 } from '@mui/material';
 import {
   KeyboardArrowDown as KeyboardArrowDownIcon,
@@ -272,9 +274,9 @@ const Main = () => {
       {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
 
       <Paper sx={{ p: 2, mb: 3 }}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight:'bold', }}>
+        {/* <Typography variant="h5" gutterBottom sx={{ fontWeight:'bold', }}>
           Continuous Testing Dashboard
-        </Typography>
+        </Typography> */}
 
         <Button
           variant="contained"
@@ -294,27 +296,38 @@ const Main = () => {
           open={Boolean(createAnchorEl)}
           onClose={() => setCreateAnchorEl(null)}
         >
-          <ListSubheader sx={{ backgroundColor:'#e5e5e5' }}>Accessories</ListSubheader>
-          {projectCategories.accessories.map((type) => (
-            <MenuItem 
-              key={type} 
-              onClick={() => handleMenuItemClick(type)}
-              sx={{ textTransform: 'capitalize' }}
-            >
-              {type}
-            </MenuItem>
-          ))}
-          <ListSubheader sx={{ backgroundColor:'#e5e5e5' }}>Robots</ListSubheader>
-          {projectCategories.robots.map((type) => (
-            <MenuItem 
-              key={type} 
-              onClick={() => handleMenuItemClick(type)}
-              disabled
-              sx={{ textTransform: 'capitalize' }}
-            >
-              {type}
-            </MenuItem>
-          ))}
+          <Grid2 container spacing={1} sx={{ padding: "5px" }}>
+            {/* Accessories  column */}
+            <Grid2 item xs={6}>
+              <ListSubheader sx={{ backgroundColor:'#e5e5e5' }}>Accessories</ListSubheader>
+              {projectCategories.accessories.map((type) => (
+                <MenuItem 
+                  key={type} 
+                  onClick={() => handleMenuItemClick(type)}
+                  sx={{ textTransform: 'capitalize' }}
+                >
+                  {type}
+                </MenuItem>
+              ))}
+            </Grid2>
+            
+            <Divider orientation="vertical" flexItem />
+
+            {/* Robots column */}
+            <Grid2 item xs={6}>
+              <ListSubheader sx={{ backgroundColor:'#e5e5e5' }}>Robots</ListSubheader>
+              {projectCategories.robots.map((type) => (
+                <MenuItem 
+                  key={type} 
+                  onClick={() => handleMenuItemClick(type)}
+                  disabled
+                  sx={{ textTransform: 'capitalize' }}
+                >
+                  {type}
+                </MenuItem>
+              ))}
+            </Grid2>
+          </Grid2>
         </Menu>
       </Paper>
 
@@ -328,7 +341,7 @@ const Main = () => {
                   setSelectedInstance(instance);
                   setModalOpen(true);
                 }}
-              sx={{ position: "relative", height: "150px", paddingBottom: "40px", cursor: "pointer" }}>
+              sx={{ position: "relative", height: "180px", paddingBottom: "40px", cursor: "pointer" }}>
               {/* Clickable Card Content */}
               <CardContent>
                 <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
@@ -341,7 +354,7 @@ const Main = () => {
                   Status: {instance.status}
                 </Typography>
 
-                <Typography color="text.secondary" sx={{ fontSize: '0.800rem', marginTop:'20px', fontStyle:'italic',  }}>
+                <Typography color="text.secondary" sx={{ fontSize: '0.800rem', marginTop:'50px', fontStyle:'italic', }}>
                   Created: {new Date(instance.created_at).toLocaleDateString()}
                 </Typography>
               </CardContent>
