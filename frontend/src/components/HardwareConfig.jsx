@@ -466,7 +466,7 @@ useEffect(() => {
             color="error"
             fullWidth
             onClick={() => onStop(instance.id)}
-            // disabled={instance.status !== 'running'} // Use instance.status for button state
+            disabled={instance.status !== 'running'} // Use instance.status for button state
             sx={{ textTransform:'none', background: "linear-gradient(to bottom right, #e9f3fc, #cde5fa)", color:'#36454F' }}
           >
             Stop
