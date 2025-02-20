@@ -500,7 +500,7 @@ const Main = () => {
           <Button 
             onClick={() => setModalOpen(false)} 
             variant='text' 
-            sx={{ textTransform:'none', backgroundColor: '#e9f3fc', color: '#000', '&:hover':{backgroundColor:"#cde5fa"}, right: 10, }}
+            sx={{ textTransform:'none', backgroundColor: '#e9f3fc', color: '#000', '&:hover':{backgroundColor:"#cde5fa"}, right: 15, }}
             >
               Close
           </Button>
