@@ -64,6 +64,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
   const [portLoading, setPortLoading] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
+  
 
 
   // Update local state when instance prop changes
@@ -311,19 +312,19 @@ useEffect(() => {
                       >
                           {availablePorts.map((port) => (
                               <MenuItem key={port.path} value={port.path}>
-                                  <Tooltip title={`
+                                  {/* <Tooltip title={`
                                       Manufacturer: ${port.manufacturer}
                                       Serial: ${port.serialNumber}
                                       VID: ${port.vendorId}
                                       PID: ${port.productId}
-                                  `}>
+                                  `}> */}
                                       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                           <Typography>{port.path}</Typography>
                                           <Typography variant="caption" color="text.secondary">
                                               {port.manufacturer || 'Unknown device'}
                                           </Typography>
                                       </Box>
-                                  </Tooltip>
+                                  {/* </Tooltip> */}
                               </MenuItem>
                           ))}
                       </Select>
