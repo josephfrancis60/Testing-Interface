@@ -122,7 +122,7 @@ const defaultConfigs = {
 // Project categories and their items
 const projectCategories = {
   accessories: ['qswipe', 'qtap', 'qba', 'qbq'],
-  robots: ['qdesk', 'pro d']
+  robots: ['qdesk', 'pro d', 'vertix']
 };
 
 const Main = () => {
