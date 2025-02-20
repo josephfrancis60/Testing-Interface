@@ -344,7 +344,7 @@ const Main = () => {
               sx={{ position: "relative", height: "180px", paddingBottom: "40px", cursor: "pointer" }}>
               {/* Clickable Card Content */}
               <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#36454F' }}>
                   {instance.project_name}
                 </Typography>
                 <Typography sx={{ textTransform: 'capitalize', color: 'text.secondary' }}>
