@@ -1,0 +1,2 @@
+2025-02-21 12:15:39,917 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-21 14:10:23,232 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
