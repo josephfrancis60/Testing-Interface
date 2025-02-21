@@ -38,13 +38,13 @@ const CreateTestcaseModal = ({ open, onClose, onSave, hardwareType }) => {
     };
 
     return (
-        <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
+        <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
             <DialogTitle>Create New TestCase</DialogTitle>
             <DialogContent>
                 {error && (
                     <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>
                 )}
-                <Stack spacing={2} sx={{ mt: 2 }}>
+                <Stack spacing={2} sx={{ mt: 1 }}>
                     <TextField
                         label="Testcase Set Name"
                         value={name}

@@ -495,7 +495,7 @@ const Main = () => {
             </Box>
           )}
         </DialogContent>
-
+        
         <DialogActions>
           <Button 
             onClick={() => setModalOpen(false)} 

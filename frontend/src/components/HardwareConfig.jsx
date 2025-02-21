@@ -45,7 +45,7 @@ const PortInUseDialog = ({ open, onClose, portNumber }) => (
   </Dialog>
 );
 
-const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, runningPorts, handleCloseModal, }) => {
+const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, runningPorts, handleCloseModal }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [config, setConfig] = useState({
     ...instance,
@@ -64,43 +64,42 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
   const [portLoading, setPortLoading] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
-  
 
 
   // Update local state when instance prop changes
   useEffect(() => {
-    setConfig(prevConfig => ({
-      ...prevConfig,
-      ...instance,
-      port: instance.port,
-      baudRate: parseInt(instance.baud_rate),
-      numCycles: parseInt(instance.num_cycles),
-      commandDelay: parseFloat(instance.command_delay),
-      commands: Array.isArray(instance.commands) ? instance.commands : JSON.parse(instance.commands),
-      status: instance.status // Make sure to update status
-    }));
-  }, [instance]); // Dependency on instance ensures updates when parent changes
+    if (!isEditing) { // Only update if not in editing mode
+      setConfig({
+        ...instance,
+        port: instance.port,
+        baudRate: parseInt(instance.baud_rate),
+        numCycles: parseInt(instance.num_cycles),
+        commandDelay: parseFloat(instance.command_delay),
+        commands: Array.isArray(instance.commands) ? instance.commands : JSON.parse(instance.commands)
+      });
+    }
+  }, [instance, isEditing]); // Dependency on instance ensures updates when parent changes
 
-  // Add this function to fetch available ports
-const fetchAvailablePorts = async () => {
-  setPortLoading(true);
-  try {
-      const response = await fetch(`${API_BASE_URL}/serial-ports`);
-      if (!response.ok) throw new Error('Failed to fetch serial ports');
-      const ports = await response.json();
-      setAvailablePorts(ports);
-  } catch (error) {
-      setError('Failed to fetch available serial ports');
-      console.error(error);
-  } finally {
-      setPortLoading(false);
-  }
-};
+// Add this function to fetch available ports
+  const fetchAvailablePorts = async () => {
+    setPortLoading(true);
+    try {
+        const response = await fetch(`${API_BASE_URL}/serial-ports`);
+        if (!response.ok) throw new Error('Failed to fetch serial ports');
+        const ports = await response.json();
+        setAvailablePorts(ports);
+    } catch (error) {
+        setError('Failed to fetch available serial ports');
+        console.error(error);
+    } finally {
+        setPortLoading(false);
+    }
+  };
 
-// Add this useEffect to fetch ports when component mounts
-useEffect(() => {
-  fetchAvailablePorts();
-}, []);
+  // Add this useEffect to fetch ports when component mounts
+  useEffect(() => {
+    fetchAvailablePorts();
+  }, []);
 
 
   useEffect(() => {
@@ -139,7 +138,10 @@ useEffect(() => {
           await fetchCommandSets();
           setCreateCommandModalOpen(false);
       } catch (err) {
-          setError(err.message);
+          // setError(err.message);
+          setSnackbarMessage("Testcase in that name already exists");
+          setOpenSnackbar(true);
+          setCreateCommandModalOpen(false);
       }
   };
 
@@ -211,7 +213,7 @@ useEffect(() => {
         throw new Error(data.error || 'Failed to delete command set');
       }
 
-      // Fetch updated command sets
+      // Fetch updated command sets 
       const updatedSets = await fetch(`${API_BASE_URL}/command-sets/${instance.hardware_type}`);
       const commandSetsData = await updatedSets.json();
       setCommandSets(commandSetsData);
@@ -241,7 +243,7 @@ useEffect(() => {
       }
 
       // Show success message
-      setSnackbarMessage('Test Case Deleted');
+      setSnackbarMessage('Test Case Deleted successfully');
       setOpenSnackbar(true);
     } catch (err) {
       setError(err.message);
@@ -254,6 +256,15 @@ useEffect(() => {
       return;
     }
     await onStart(instance.id);
+  };
+
+  const handleInputChange = (field, value) => {
+    if (isEditing && instance.status !== 'running') {
+      setConfig(prev => ({
+        ...prev,
+        [field]: value
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -271,24 +282,49 @@ useEffect(() => {
         })
       });
       
-      if (!response.ok) throw new Error('Failed to update configuration');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to update configuration');
+      }
       
       await onUpdate();
       setIsEditing(false);
       setError('');
+      setSnackbarMessage('Configuration updated successfully');
+      setOpenSnackbar(true);
     } catch (err) {
       setError(err.message);
+      setSnackbarMessage('Failed to update configuration');
+      setOpenSnackbar(true);
     }
   };
 
+  // Disable inputs when not editing
+  const isInputDisabled = !isEditing || instance.status === 'running';
+
   return (
     <>
-      <Card sx={{ minWidth: 300, m: 2, pb:2.5 }}>
+      <Card sx={{ minWidth: 300, m: 2, pb: 2.5 }}>
         <CardContent>
           <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
             <Typography variant="h6">{instance.id}</Typography>
             <IconButton 
-              onClick={() => setIsEditing(!isEditing)}
+              onClick={() => {
+                if (instance.status !== 'running') {
+                  setIsEditing(!isEditing);
+                  if (isEditing) {
+                    // Reset form when canceling edit
+                    setConfig({
+                      ...instance,
+                      port: instance.port,
+                      baudRate: parseInt(instance.baud_rate),
+                      numCycles: parseInt(instance.num_cycles),
+                      commandDelay: parseFloat(instance.command_delay),
+                      commands: Array.isArray(instance.commands) ? instance.commands : JSON.parse(instance.commands)
+                    });
+                  }
+                }
+              }}
               color={isEditing ? 'primary' : 'default'}
               disabled={instance.status === 'running'}
             >
@@ -300,68 +336,60 @@ useEffect(() => {
 
           <form onSubmit={handleSubmit}>
             <Stack spacing={2}>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                  <FormControl variant="standard" fullWidth>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel>Port</InputLabel>
+                <Select
+                  value={config.port}
+                  onChange={(e) => handleInputChange('port', e.target.value)}
+                  disabled={isInputDisabled}
+                >
+                  {availablePorts.map((port) => (
+                    <MenuItem key={port.path} value={port.path}>
+                      {/* <Tooltip title={`
+                        Manufacturer: ${port.manufacturer}
+                        Serial: ${port.serialNumber}
+                        VID: ${port.vendorId}
+                        PID: ${port.productId}
+                      `}> */}
+                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                          <Typography>{port.path}</Typography>
+                          <Typography variant="caption" color="text.secondary">
+                            Serial No: {port.serialNumber}
+                          </Typography>
+                        </Box>
+                      {/* </Tooltip> */}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
 
-                    {/* Port selection */}
-                      <InputLabel>Port</InputLabel>
-                      <Select
-                          value={config.port}
-                          onChange={(e) => setConfig({ ...config, port: e.target.value })}
-                          disabled={!isEditing || portLoading}
-                      >
-                          {availablePorts.map((port) => (
-                              <MenuItem key={port.path} value={port.path}>
-                                  {/* <Tooltip title={`
-                                      Manufacturer: ${port.manufacturer}
-                                      Serial: ${port.serialNumber}
-                                      VID: ${port.vendorId}
-                                      PID: ${port.productId}
-                                  `}> */}
-                                      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                          <Typography>{port.path}</Typography>
-                                          <Typography variant="caption" color="text.secondary">
-                                              {port.manufacturer || 'Unknown device'}
-                                          </Typography>
-                                      </Box>
-                                  {/* </Tooltip> */}
-                              </MenuItem>
-                          ))}
-                      </Select>
-                  </FormControl>
-                  <IconButton 
-                      onClick={fetchAvailablePorts} 
-                      disabled={!isEditing || portLoading}
-                      size="small"
-                  >
-                      <RefreshIcon />
-                  </IconButton>
-              </Box>
               <TextField
                 label="Baud Rate"
                 variant="standard"
                 type="number"
                 value={config.baudRate}
-                disabled={!isEditing}
-                onChange={(e) => setConfig({ ...config, baudRate: e.target.value })}
+                onChange={(e) => handleInputChange('baudRate', e.target.value)}
+                disabled={isInputDisabled}
                 size="small"
               />
+
               <TextField
                 label="Number of Cycles"
                 variant="standard"
                 type="number"
                 value={config.numCycles}
-                disabled={!isEditing}
-                onChange={(e) => setConfig({ ...config, numCycles: e.target.value })}
+                onChange={(e) => handleInputChange('numCycles', e.target.value)}
+                disabled={isInputDisabled}
                 size="small"
               />
+
               <TextField
                 label="Command Delay (Seconds)"
                 variant="standard"
                 type="number"
                 value={config.commandDelay}
-                disabled={!isEditing}
-                onChange={(e) => setConfig({ ...config, commandDelay: e.target.value })}
+                onChange={(e) => handleInputChange('commandDelay', e.target.value)}
+                disabled={isInputDisabled}
                 inputProps={{ step: "0.1" }}
                 size="small"
               />
@@ -414,7 +442,7 @@ useEffect(() => {
                       size="small"
                       variant="outlined"
                   />
-              </Stack>
+              
 
             <CreateTestcaseModal
                 open={createCommandModalOpen}
@@ -433,9 +461,10 @@ useEffect(() => {
                 Save Changes
               </Button>
             )}
+            </Stack>
           </form>
 
-          <Divider sx={{ my: 2 }} />
+          <Divider sx={{ my: 2, size:3 }} />
 
           <Typography variant="subtitle2" color="text.secondary">
             Status: {instance.status}
@@ -455,7 +484,7 @@ useEffect(() => {
             // color="success"
             fullWidth
             onClick={handleStart}
-            disabled={instance.status === 'running'} // Use instance.status for button state
+            disabled={instance.status === 'running' || isEditing} // Use instance.status for button state
             sx={{ textTransform:'none', background: "linear-gradient(to bottom right, #33bfff, #5d5ce5)", }}
           >
             Run
@@ -483,8 +512,8 @@ useEffect(() => {
       >
         <Alert
           onClose={() => setOpenSnackbar(false)}
-          severity={snackbarMessage.includes('Deleted') ? 'success' : 'error'}
-          sx={{width: '100%'}}
+          severity={snackbarMessage.includes('successfully') ? 'success' : 'error'}
+          sx={{ width: '100%' }}
         >
           {snackbarMessage}
         </Alert>
