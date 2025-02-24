@@ -1,0 +1,128 @@
+2025-02-21 15:56:36,320 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2025-02-21 16:27:53,763 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2025-02-21 16:28:00,898 - INFO - Connected to COM7 at 115200 baud.
+2025-02-21 16:28:00,899 - INFO - Sending command: #:
+
+2025-02-21 16:28:01,902 - INFO - Feedback: b''
+2025-02-21 16:28:01,902 - ERROR - Received empty feedback.
+2025-02-21 16:28:02,902 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:03,102 - INFO - Feedback: b'0'
+2025-02-21 16:28:04,102 - INFO - Cycle: 1/10 completed.
+2025-02-21 16:28:04,103 - INFO - Sending command: #:
+
+2025-02-21 16:28:05,108 - INFO - Feedback: b''
+2025-02-21 16:28:05,108 - ERROR - Received empty feedback.
+2025-02-21 16:28:06,109 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:06,109 - INFO - Feedback: b'0'
+2025-02-21 16:28:07,110 - INFO - Cycle: 2/10 completed.
+2025-02-21 16:28:07,110 - INFO - Sending command: #:
+
+2025-02-21 16:28:07,645 - INFO - Feedback: b'0'
+2025-02-21 16:28:08,646 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:09,649 - INFO - Feedback: b''
+2025-02-21 16:28:09,649 - ERROR - Received empty feedback.
+2025-02-21 16:28:10,650 - INFO - Cycle: 3/10 completed.
+2025-02-21 16:28:10,650 - INFO - Sending command: #:
+
+2025-02-21 16:28:10,651 - INFO - Feedback: b'0'
+2025-02-21 16:28:11,651 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:12,174 - INFO - Feedback: b'0'
+2025-02-21 16:28:13,174 - INFO - Cycle: 4/10 completed.
+2025-02-21 16:28:13,175 - INFO - Sending command: #:
+
+2025-02-21 16:28:14,178 - INFO - Feedback: b''
+2025-02-21 16:28:14,178 - ERROR - Received empty feedback.
+2025-02-21 16:28:15,178 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:15,179 - INFO - Feedback: b'0'
+2025-02-21 16:28:16,180 - INFO - Cycle: 5/10 completed.
+2025-02-21 16:28:16,180 - INFO - Sending command: #:
+
+2025-02-21 16:28:16,702 - INFO - Feedback: b'0'
+2025-02-21 16:28:17,703 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:18,713 - INFO - Feedback: b''
+2025-02-21 16:28:18,714 - ERROR - Received empty feedback.
+2025-02-21 16:28:19,714 - INFO - Cycle: 6/10 completed.
+2025-02-21 16:28:19,714 - INFO - Sending command: #:
+
+2025-02-21 16:28:19,715 - INFO - Feedback: b'0'
+2025-02-21 16:28:20,716 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:21,230 - INFO - Feedback: b'0'
+2025-02-21 16:28:22,230 - INFO - Cycle: 7/10 completed.
+2025-02-21 16:28:22,231 - INFO - Sending command: #:
+
+2025-02-21 16:28:23,243 - INFO - Feedback: b''
+2025-02-21 16:28:23,243 - ERROR - Received empty feedback.
+2025-02-21 16:28:24,244 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:24,245 - INFO - Feedback: b'0'
+2025-02-21 16:28:25,245 - INFO - Cycle: 8/10 completed.
+2025-02-21 16:28:25,245 - INFO - Sending command: #:
+
+2025-02-21 16:28:25,742 - INFO - Feedback: b'0'
+2025-02-21 16:28:26,742 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:27,743 - INFO - Feedback: b''
+2025-02-21 16:28:27,743 - ERROR - Received empty feedback.
+2025-02-21 16:28:28,743 - INFO - Cycle: 9/10 completed.
+2025-02-21 16:28:28,744 - INFO - Sending command: #:
+
+2025-02-21 16:28:28,744 - INFO - Feedback: b'0'
+2025-02-21 16:28:29,745 - INFO - Sending command: QR:123:
+
+2025-02-21 16:28:30,270 - INFO - Feedback: b'0'
+2025-02-21 16:28:31,270 - INFO - Cycle: 10/10 completed.
+2025-02-21 16:28:31,385 - INFO - Serial connection closed.
+2025-02-21 16:28:31,385 - INFO - Total commands completed: 20
+2025-02-21 16:28:31,385 - INFO - Total errors encountered: 7
+2025-02-21 16:28:31,385 - INFO - Total timeouts encountered: 0
+2025-02-21 16:28:31,385 - INFO - Total cycles completed: 10
+2025-02-21 17:30:08,219 - INFO - Connected to COM7 at 115200 baud.
+2025-02-21 17:30:08,219 - INFO - Sending command: #:
+
+2025-02-21 17:30:09,221 - INFO - Feedback: b''
+2025-02-21 17:30:09,222 - ERROR - Received empty feedback.
+2025-02-21 17:30:10,222 - INFO - Sending command: QR:123:
+
+2025-02-21 17:30:10,422 - INFO - Feedback: b'0'
+2025-02-21 17:30:11,423 - INFO - Cycle: 1/10 completed.
+2025-02-21 17:30:11,423 - INFO - Sending command: #:
+
+2025-02-21 17:30:12,425 - INFO - Feedback: b''
+2025-02-21 17:30:12,425 - ERROR - Received empty feedback.
+2025-02-21 17:30:13,425 - INFO - Sending command: QR:123:
+
+2025-02-21 17:30:13,426 - INFO - Feedback: b'0'
+2025-02-21 17:30:14,426 - INFO - Cycle: 2/10 completed.
+2025-02-21 17:30:14,426 - INFO - Sending command: #:
+
+2025-02-21 17:30:14,950 - INFO - Feedback: b'0'
+2025-02-21 17:30:15,950 - INFO - Sending command: QR:123:
+
+2025-02-21 17:30:16,959 - INFO - Feedback: b''
+2025-02-21 17:30:16,960 - ERROR - Received empty feedback.
+2025-02-21 17:30:17,960 - INFO - Cycle: 3/10 completed.
+2025-02-21 17:30:17,960 - INFO - Sending command: #:
+
+2025-02-21 17:30:17,961 - INFO - Feedback: b'0'
+2025-02-21 17:30:18,961 - INFO - Sending command: QR:123:
+
+2025-02-21 17:30:19,478 - INFO - Feedback: b'0'
+2025-02-21 17:30:20,479 - INFO - Cycle: 4/10 completed.
+2025-02-21 17:30:20,479 - INFO - Sending command: #:
+
+2025-02-21 17:30:21,489 - INFO - Feedback: b''
+2025-02-21 17:30:21,490 - ERROR - Received empty feedback.
+2025-02-21 17:30:22,490 - INFO - Sending command: QR:123:
+
+2025-02-21 17:30:22,491 - INFO - Feedback: b'0'
+2025-02-21 17:30:23,491 - INFO - Cycle: 5/10 completed.
+2025-02-21 17:30:23,492 - INFO - Sending command: #:
+
+2025-02-21 17:30:24,006 - INFO - Feedback: b'0'
