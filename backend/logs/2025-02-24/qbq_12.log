@@ -122,3 +122,74 @@
 2025-02-24 11:45:48,238 - ERROR - Unexpected feedback code: 0
 2025-02-24 11:45:50,238 - INFO - Sending command: BR:1122:
 
+2025-02-24 12:15:24,749 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 12:15:24,749 - INFO - Sending command: #:
+
+2025-02-24 12:15:25,751 - INFO - Feedback: b''
+2025-02-24 12:15:25,751 - ERROR - Received empty feedback.
+2025-02-24 12:15:27,751 - INFO - Sending command: QR:abc:
+
+2025-02-24 12:15:27,752 - INFO - Feedback: b'0'
+2025-02-24 12:15:27,752 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:29,752 - INFO - Sending command: #:
+
+2025-02-24 12:15:30,104 - INFO - Feedback: b'0'
+2025-02-24 12:15:30,105 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:32,105 - INFO - Sending command: BR:123:
+
+2025-02-24 12:15:32,296 - INFO - Feedback: b'0'
+2025-02-24 12:15:32,297 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:34,297 - INFO - Cycle: 1/1 completed.
+2025-02-24 12:15:34,416 - INFO - Serial connection closed.
+2025-02-24 12:15:34,416 - INFO - Total commands completed: 4
+2025-02-24 12:15:34,416 - INFO - Total errors encountered: 4
+2025-02-24 12:15:34,416 - INFO - Total timeouts encountered: 0
+2025-02-24 12:15:34,416 - INFO - Total cycles completed: 1
+2025-02-24 12:15:45,530 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 12:15:45,530 - INFO - Sending command: #:
+
+2025-02-24 12:15:46,542 - INFO - Feedback: b''
+2025-02-24 12:15:46,542 - ERROR - Received empty feedback.
+2025-02-24 12:15:48,542 - INFO - Sending command: QR:abc:
+
+2025-02-24 12:15:48,543 - INFO - Feedback: b'0'
+2025-02-24 12:15:48,543 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:50,544 - INFO - Sending command: #:
+
+2025-02-24 12:15:50,885 - INFO - Feedback: b'0'
+2025-02-24 12:15:50,886 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:52,886 - INFO - Sending command: BR:123:
+
+2025-02-24 12:15:53,078 - INFO - Feedback: b'0'
+2025-02-24 12:15:53,078 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:15:55,078 - INFO - Cycle: 1/1 completed.
+2025-02-24 12:15:55,198 - INFO - Serial connection closed.
+2025-02-24 12:15:55,198 - INFO - Total commands completed: 4
+2025-02-24 12:15:55,198 - INFO - Total errors encountered: 4
+2025-02-24 12:15:55,199 - INFO - Total timeouts encountered: 0
+2025-02-24 12:15:55,199 - INFO - Total cycles completed: 1
+2025-02-24 12:16:08,672 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 12:16:08,672 - INFO - Sending command: QR:aabbcc:
+
+2025-02-24 12:16:09,677 - INFO - Feedback: b''
+2025-02-24 12:16:09,678 - ERROR - Received empty feedback.
+2025-02-24 12:16:11,678 - INFO - Sending command: BR:1122:
+
+2025-02-24 12:16:11,678 - INFO - Feedback: b'0'
+2025-02-24 12:16:11,678 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:16:13,679 - INFO - Sending command: #:
+
+2025-02-24 12:16:13,899 - INFO - Feedback: b'0'
+2025-02-24 12:16:13,899 - ERROR - Unexpected feedback code: 0
+2025-02-24 12:16:15,900 - INFO - Cycle: 1/1 completed.
+2025-02-24 12:16:16,017 - INFO - Serial connection closed.
+2025-02-24 12:16:16,017 - INFO - Total commands completed: 3
+2025-02-24 12:16:16,017 - INFO - Total errors encountered: 3
+2025-02-24 12:16:16,017 - INFO - Total timeouts encountered: 0
+2025-02-24 12:16:16,017 - INFO - Total cycles completed: 1
+2025-02-24 12:38:25,672 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-24 12:38:48,853 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 12:38:48,854 - INFO - Sending command: QR:aabbcc:
+
+2025-02-24 12:38:49,855 - INFO - Feedback: b''
+2025-02-24 12:38:49,855 - ERROR - Received empty feedback.
