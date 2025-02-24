@@ -23,7 +23,7 @@ const defaultConfigs = {
     'qtap': {
         port: '/dev/ttyUSB0',
         baudRate: 115200,
-        numCycles: 10,
+        numCycles: 5,
         commandDelay: 1.0,
         commands: ['i:', 'r:']
     },
@@ -43,7 +43,7 @@ const defaultConfigs = {
         baudRate: 115200,
         numCycles: 5,
         commandDelay: 2.0,
-        commands: ['#:', 'QR:abc:', '#:', 'BR:123:']
+        commands: ['BR:123:', '#:', 'QR:abc:', '#:']  // Empty array since commands are generated dynamically in the script
     }
 };
 

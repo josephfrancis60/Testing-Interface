@@ -7,7 +7,7 @@ import os
 import argparse
 import json
 
-class QTapTester:
+class HardwareTester:
     def __init__(self, port, baud_rate, num_cycles, commands, command_delay, instance_id):
         self.SERIAL_PORT = port
         self.BAUD_RATE = baud_rate
@@ -145,12 +145,13 @@ class QTapTester:
             self.cleanup()
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='QTap Testing Script')
-    parser.add_argument('--port', type=str, default='/dev/ttyUSB0', help='Serial port')
+    parser = argparse.ArgumentParser(description='Qtap Testing Script')
+    parser.add_argument('--port', type=str, default='COM3', help='Serial port')
     parser.add_argument('--baud', type=int, default=115200, help='Baud rate')
-    parser.add_argument('--cycles', type=int, default=5000, help='Number of cycles')
-    parser.add_argument('--delay', type=float, default=1.0, help='Delay between commands in seconds')
-    parser.add_argument('--commands', type=str, nargs='+', default=['i:', 'r:'], 
+    parser.add_argument('--cycles', type=int, default=5, help='Number of cycles')
+    parser.add_argument('--delay', type=float, default=3.0, help='Delay between commands in seconds')
+    parser.add_argument('--commands', type=str, nargs='+', 
+                       default=['i:', 'r:'], 
                        help='Commands to execute')
     parser.add_argument('--id', type=str, required=True, help='Instance ID')
 
@@ -159,5 +160,5 @@ if __name__ == "__main__":
     # Add newline to commands if not present
     commands = [cmd if cmd.endswith('\n') else cmd + '\n' for cmd in args.commands]
     
-    tester = QTapTester(args.port, args.baud, args.cycles, commands, args.delay, args.id)
+    tester = HardwareTester(args.port, args.baud, args.cycles, commands, args.delay, args.id)
     tester.run()

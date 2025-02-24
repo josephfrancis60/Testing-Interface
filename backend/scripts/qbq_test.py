@@ -7,7 +7,7 @@ import os
 import argparse
 import json
 
-class QBQTester:
+class HardwareTester:
     def __init__(self, port, baud_rate, num_cycles, commands, command_delay, instance_id):
         self.SERIAL_PORT = port
         self.BAUD_RATE = baud_rate
@@ -15,8 +15,8 @@ class QBQTester:
         self.COMMANDS = commands
         self.COMMAND_DELAY = command_delay
         self.INSTANCE_ID = instance_id
-        self.SUCCESS_CODE = 0
-        self.TIMEOUT_CODE = 13
+        self.SUCCESS_CODE = 48
+        self.TIMEOUT_CODE = 50
         
         self.count = 0
         self.error = 0
@@ -28,20 +28,25 @@ class QBQTester:
         self.connect_serial()
 
     def setup_logging(self):
+        # Create date-based directory
         current_date = datetime.now().strftime("%Y-%m-%d")
         self.log_dir = os.path.join('logs', current_date)
         os.makedirs(self.log_dir, exist_ok=True)
         
+        # Create logger with instance ID
         self.logger = logging.getLogger(self.INSTANCE_ID)
         self.logger.setLevel(logging.INFO)
         
+        # Clear any existing handlers
         self.logger.handlers = []
         
+        # File handler - use instance ID for the log file name
         log_file = os.path.join(self.log_dir, f'{self.INSTANCE_ID}.log')
         file_handler = logging.FileHandler(log_file)
         file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         self.logger.addHandler(file_handler)
         
+        # Stream handler for real-time output
         stream_handler = logging.StreamHandler(sys.stdout)
         stream_handler.setFormatter(logging.Formatter('%(message)s'))
         self.logger.addHandler(stream_handler)
@@ -72,6 +77,7 @@ class QBQTester:
                     self.logger.error(f"Unexpected feedback code: {feedback_value}")
                     self.error += 1
             else:
+                self.logger.error("Received empty feedback.")
                 self.error += 1
                 
         except ValueError as ve:
@@ -107,7 +113,7 @@ class QBQTester:
             self.serial_conn.close()
             self.logger.info("Serial connection closed.")
         
-        self.logger.info(f"Total commands executed: {self.count}")
+        self.logger.info(f"Total commands completed: {self.count}")
         self.logger.info(f"Total errors encountered: {self.error}")
         self.logger.info(f"Total timeouts encountered: {self.timeout}")
         self.logger.info(f"Total cycles completed: {self.count // len(self.COMMANDS)}")
@@ -121,7 +127,7 @@ class QBQTester:
                 for command in self.COMMANDS:
                     if not self.is_running:
                         break
-                    self.send_command(command + '\n')
+                    self.send_command(command)
                 
                 progress = {
                     'cycle': cycle + 1,
@@ -130,7 +136,7 @@ class QBQTester:
                     'timeouts': self.timeout
                 }
                 
-                print(json.dumps(progress))
+                print(json.dumps(progress))  # Print progress as JSON for easy parsing
                 self.logger.info(f"Cycle: {cycle + 1}/{self.NUM_CYCLES} completed.")
                 
         except KeyboardInterrupt:
@@ -139,19 +145,20 @@ class QBQTester:
             self.cleanup()
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='QBQ Testing Script')
+    parser = argparse.ArgumentParser(description='Qbq Testing Script')
     parser.add_argument('--port', type=str, default='COM7', help='Serial port')
     parser.add_argument('--baud', type=int, default=115200, help='Baud rate')
     parser.add_argument('--cycles', type=int, default=5, help='Number of cycles')
-    parser.add_argument('--delay', type=float, default=2.0, help='Delay between commands in seconds')
+    parser.add_argument('--delay', type=float, default=3.0, help='Delay between commands in seconds')
     parser.add_argument('--commands', type=str, nargs='+', 
-                       default=['#:', 'QR:abc:', '#:', 'BR:123:'], 
+                       default=['BR:123:', '#:', 'QR:abc:', '#:'], 
                        help='Commands to execute')
     parser.add_argument('--id', type=str, required=True, help='Instance ID')
 
     args = parser.parse_args()
     
+    # Add newline to commands if not present
     commands = [cmd if cmd.endswith('\n') else cmd + '\n' for cmd in args.commands]
     
-    tester = QBQTester(args.port, args.baud, args.cycles, commands, args.delay, args.id)
+    tester = HardwareTester(args.port, args.baud, args.cycles, commands, args.delay, args.id)
     tester.run()

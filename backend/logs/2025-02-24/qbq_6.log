@@ -1,0 +1,55 @@
+2025-02-24 10:02:17,943 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-24 10:04:04,840 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-24 10:12:01,233 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 10:12:01,233 - INFO - Sending command: BR:123:
+
+
+2025-02-24 10:12:01,243 - INFO - Feedback: b'13'
+2025-02-24 10:12:01,243 - WARNING - Timeout occurred.
+2025-02-24 10:12:03,243 - INFO - Sending command: #:
+
+
+2025-02-24 10:12:03,258 - INFO - Feedback: b'13'
+2025-02-24 10:12:03,259 - WARNING - Timeout occurred.
+2025-02-24 10:12:05,262 - INFO - Sending command: QR:abc:
+
+
+2025-02-24 10:12:05,274 - INFO - Feedback: b'13'
+2025-02-24 10:12:05,274 - WARNING - Timeout occurred.
+2025-02-24 10:19:49,641 - INFO - Connected to COM7 at 115200 baud.
+2025-02-24 10:19:49,642 - INFO - Sending command: BR:123:
+
+
+2025-02-24 10:19:49,653 - INFO - Feedback: b'13'
+2025-02-24 10:19:49,653 - WARNING - Timeout occurred.
+2025-02-24 10:19:51,654 - INFO - Sending command: #:
+
+
+2025-02-24 10:19:51,669 - INFO - Feedback: b'13'
+2025-02-24 10:19:51,669 - WARNING - Timeout occurred.
+2025-02-24 10:19:53,669 - INFO - Sending command: QR:abc:
+
+
+2025-02-24 10:19:53,685 - INFO - Feedback: b'13'
+2025-02-24 10:19:53,685 - WARNING - Timeout occurred.
+2025-02-24 10:19:55,685 - INFO - Sending command: #:
+
+
+2025-02-24 10:19:55,701 - INFO - Feedback: b'13'
+2025-02-24 10:19:55,701 - WARNING - Timeout occurred.
+2025-02-24 10:19:57,701 - INFO - Cycle: 1/5 completed.
+2025-02-24 10:19:57,701 - INFO - Sending command: BR:123:
+
+
+2025-02-24 10:19:57,717 - INFO - Feedback: b'13'
+2025-02-24 10:19:57,717 - WARNING - Timeout occurred.
+2025-02-24 10:19:59,718 - INFO - Sending command: #:
+
+
+2025-02-24 10:19:59,733 - INFO - Feedback: b'13'
+2025-02-24 10:19:59,733 - WARNING - Timeout occurred.
+2025-02-24 10:20:01,733 - INFO - Sending command: QR:abc:
+
+
+2025-02-24 10:20:01,749 - INFO - Feedback: b'13'
+2025-02-24 10:20:01,749 - WARNING - Timeout occurred.
