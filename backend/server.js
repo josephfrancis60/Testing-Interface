@@ -42,7 +42,7 @@ const defaultConfigs = {
         port: 'COM7',
         baudRate: 115200,
         numCycles: 5,
-        commandDelay: 2.0,
+        commandDelay: 0.5,
         commands: ['BR:123:', '#:', 'QR:abc:', '#:']  // Empty array since commands are generated dynamically in the script
     }
 };

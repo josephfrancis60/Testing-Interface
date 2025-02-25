@@ -114,7 +114,7 @@ const defaultConfigs = {
         port: 'COM7',
         baudRate: 115200,
         numCycles: 5,
-        commandDelay: 2.0,
+        commandDelay: 0.5,
         commands: ['BR:123:', '#:', 'QR:abc:', '#:']
     }
 };
@@ -423,6 +423,12 @@ const Main = () => {
             // fullWidth
             value={projectName}
             onChange={(e) => setProjectName(e.target.value)}
+            // Onclick when the enter key pressed
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                handleNameSubmit();
+              }
+            }}
             error={Boolean(nameError)}
             helperText={nameError}
             sx={{ width:300 }}
