@@ -1,0 +1,165 @@
+2025-02-25 09:49:07,038 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2025-02-25 09:49:13,285 - INFO - Connected to COM4 at 115200 baud.
+2025-02-25 09:49:13,285 - INFO - Sending command: BR:123:
+
+2025-02-25 09:49:14,296 - INFO - Feedback: b''
+2025-02-25 09:49:14,296 - ERROR - Received empty feedback.
+2025-02-25 09:49:14,797 - INFO - Sending command: #:
+
+2025-02-25 09:49:15,505 - INFO - Feedback: b'0'
+2025-02-25 09:49:15,505 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:16,005 - INFO - Sending command: QR:abc:
+
+2025-02-25 09:49:17,009 - INFO - Feedback: b''
+2025-02-25 09:49:17,009 - ERROR - Received empty feedback.
+2025-02-25 09:49:17,512 - INFO - Sending command: #:
+
+2025-02-25 09:49:17,696 - INFO - Feedback: b'0'
+2025-02-25 09:49:17,697 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:18,197 - INFO - Cycle: 1/5 completed.
+2025-02-25 09:49:18,197 - INFO - Sending command: BR:123:
+
+2025-02-25 09:49:19,202 - INFO - Feedback: b''
+2025-02-25 09:49:19,202 - ERROR - Received empty feedback.
+2025-02-25 09:49:19,702 - INFO - Sending command: #:
+
+2025-02-25 09:49:19,889 - INFO - Feedback: b'0'
+2025-02-25 09:49:19,889 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:20,389 - INFO - Sending command: QR:abc:
+
+2025-02-25 09:49:21,390 - INFO - Feedback: b''
+2025-02-25 09:49:21,390 - ERROR - Received empty feedback.
+2025-02-25 09:49:21,891 - INFO - Sending command: #:
+
+2025-02-25 09:49:22,080 - INFO - Feedback: b'0'
+2025-02-25 09:49:22,081 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:22,581 - INFO - Cycle: 2/5 completed.
+2025-02-25 09:49:22,581 - INFO - Sending command: BR:123:
+
+2025-02-25 09:49:23,586 - INFO - Feedback: b''
+2025-02-25 09:49:23,586 - ERROR - Received empty feedback.
+2025-02-25 09:49:24,087 - INFO - Sending command: #:
+
+2025-02-25 09:49:24,273 - INFO - Feedback: b'0'
+2025-02-25 09:49:24,273 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:24,773 - INFO - Sending command: QR:abc:
+
+2025-02-25 09:49:25,789 - INFO - Feedback: b''
+2025-02-25 09:49:25,790 - ERROR - Received empty feedback.
+2025-02-25 09:49:26,291 - INFO - Sending command: #:
+
+2025-02-25 09:49:26,449 - INFO - Feedback: b'0'
+2025-02-25 09:49:26,449 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:26,950 - INFO - Cycle: 3/5 completed.
+2025-02-25 09:49:26,950 - INFO - Sending command: BR:123:
+
+2025-02-25 09:49:27,953 - INFO - Feedback: b''
+2025-02-25 09:49:27,953 - ERROR - Received empty feedback.
+2025-02-25 09:49:28,454 - INFO - Sending command: #:
+
+2025-02-25 09:49:28,640 - INFO - Feedback: b'0'
+2025-02-25 09:49:28,641 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:29,141 - INFO - Sending command: QR:abc:
+
+2025-02-25 09:49:30,141 - INFO - Feedback: b''
+2025-02-25 09:49:30,141 - ERROR - Received empty feedback.
+2025-02-25 09:49:30,642 - INFO - Sending command: #:
+
+2025-02-25 09:49:30,833 - INFO - Feedback: b'0'
+2025-02-25 09:49:30,833 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:31,334 - INFO - Cycle: 4/5 completed.
+2025-02-25 09:49:31,334 - INFO - Sending command: BR:123:
+
+2025-02-25 09:49:32,336 - INFO - Feedback: b''
+2025-02-25 09:49:32,336 - ERROR - Received empty feedback.
+2025-02-25 09:49:32,836 - INFO - Sending command: #:
+
+2025-02-25 09:49:33,025 - INFO - Feedback: b'0'
+2025-02-25 09:49:33,025 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:33,526 - INFO - Sending command: QR:abc:
+
+2025-02-25 09:49:34,529 - INFO - Feedback: b''
+2025-02-25 09:49:34,529 - ERROR - Received empty feedback.
+2025-02-25 09:49:35,030 - INFO - Sending command: #:
+
+2025-02-25 09:49:35,216 - INFO - Feedback: b'0'
+2025-02-25 09:49:35,217 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:49:35,717 - INFO - Cycle: 5/5 completed.
+2025-02-25 09:49:35,835 - INFO - Serial connection closed.
+2025-02-25 09:49:35,836 - INFO - Total commands completed: 20
+2025-02-25 09:49:35,837 - INFO - Total errors encountered: 20
+2025-02-25 09:49:35,837 - INFO - Total timeouts encountered: 0
+2025-02-25 09:49:35,839 - INFO - Total cycles completed: 5
+2025-02-25 10:00:46,957 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 10:00:46,958 - INFO - Sending command: QR:sdgs4:
+
+2025-02-25 10:00:47,964 - INFO - Feedback: b''
+2025-02-25 10:00:47,964 - ERROR - Received empty feedback.
+2025-02-25 10:00:49,965 - INFO - Sending command: #:
+
+2025-02-25 10:00:49,965 - INFO - Feedback: b'0'
+2025-02-25 10:00:49,965 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:00:51,965 - INFO - Sending command: QR:dsg:
+
+2025-02-25 10:00:52,169 - INFO - Feedback: b'0'
+2025-02-25 10:00:52,169 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:00:54,169 - INFO - Sending command: #:
+
+2025-02-25 10:00:54,489 - INFO - Feedback: b'0'
+2025-02-25 10:00:54,489 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:00:56,490 - INFO - Cycle: 1/5 completed.
+2025-02-25 10:00:56,490 - INFO - Sending command: QR:sdgs4:
+
+2025-02-25 10:00:56,681 - INFO - Feedback: b'0'
+2025-02-25 10:00:56,681 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:00:58,681 - INFO - Sending command: #:
+
+2025-02-25 10:00:59,033 - INFO - Feedback: b'0'
+2025-02-25 10:00:59,033 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:01,034 - INFO - Sending command: QR:dsg:
+
+2025-02-25 10:01:01,225 - INFO - Feedback: b'0'
+2025-02-25 10:01:01,225 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:03,226 - INFO - Sending command: #:
+
+2025-02-25 10:01:03,545 - INFO - Feedback: b'0'
+2025-02-25 10:01:03,545 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:05,546 - INFO - Cycle: 2/5 completed.
+2025-02-25 10:01:05,546 - INFO - Sending command: QR:sdgs4:
+
+2025-02-25 10:01:05,737 - INFO - Feedback: b'0'
+2025-02-25 10:01:05,737 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:07,738 - INFO - Sending command: #:
+
+2025-02-25 10:01:08,089 - INFO - Feedback: b'0'
+2025-02-25 10:01:08,089 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:10,089 - INFO - Sending command: QR:dsg:
+
+2025-02-25 10:01:10,265 - INFO - Feedback: b'0'
+2025-02-25 10:01:10,265 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:12,265 - INFO - Sending command: #:
+
+2025-02-25 10:01:12,617 - INFO - Feedback: b'0'
+2025-02-25 10:01:12,617 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:14,618 - INFO - Cycle: 3/5 completed.
+2025-02-25 10:01:14,618 - INFO - Sending command: QR:sdgs4:
+
+2025-02-25 10:01:14,809 - INFO - Feedback: b'0'
+2025-02-25 10:01:14,809 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:16,810 - INFO - Sending command: #:
+
+2025-02-25 10:01:17,145 - INFO - Feedback: b'0'
+2025-02-25 10:01:17,145 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:19,145 - INFO - Sending command: QR:dsg:
+
+2025-02-25 10:01:19,337 - INFO - Feedback: b'0'
+2025-02-25 10:01:19,337 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:21,338 - INFO - Sending command: #:
+
+2025-02-25 10:01:21,673 - INFO - Feedback: b'0'
+2025-02-25 10:01:21,673 - ERROR - Unexpected feedback code: 0
+2025-02-25 10:01:23,673 - INFO - Cycle: 4/5 completed.
+2025-02-25 10:01:23,674 - INFO - Sending command: QR:sdgs4:
+
+2025-02-25 10:01:23,865 - INFO - Feedback: b'0'
+2025-02-25 10:01:23,865 - ERROR - Unexpected feedback code: 0

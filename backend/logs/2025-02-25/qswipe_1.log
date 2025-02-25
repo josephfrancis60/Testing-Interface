@@ -1,0 +1,240 @@
+2025-02-25 09:21:45,558 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:21:45,559 - INFO - Sending command: QR:dfad:
+
+2025-02-25 09:21:46,556 - INFO - Feedback: b''
+2025-02-25 09:21:46,556 - ERROR - Received empty feedback.
+2025-02-25 09:21:49,557 - INFO - Sending command: #:
+
+2025-02-25 09:21:49,557 - INFO - Feedback: b'0'
+2025-02-25 09:21:49,557 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:21:52,558 - INFO - Sending command: BR:123:
+
+2025-02-25 09:21:52,558 - INFO - Feedback: b'0'
+2025-02-25 09:21:52,558 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:21:55,559 - INFO - Sending command: #:
+
+2025-02-25 09:21:55,559 - INFO - Feedback: b'0'
+2025-02-25 09:21:55,559 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:21:58,562 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:21:58,563 - INFO - Sending command: QR:dfad:
+
+2025-02-25 09:21:58,563 - INFO - Feedback: b'0'
+2025-02-25 09:21:58,563 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:01,563 - INFO - Sending command: #:
+
+2025-02-25 09:22:01,564 - INFO - Feedback: b'0'
+2025-02-25 09:22:01,564 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:04,564 - INFO - Sending command: BR:123:
+
+2025-02-25 09:22:04,565 - INFO - Feedback: b'0'
+2025-02-25 09:22:04,565 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:07,565 - INFO - Sending command: #:
+
+2025-02-25 09:22:07,566 - INFO - Feedback: b'0'
+2025-02-25 09:22:07,566 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:10,567 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:22:10,683 - INFO - Serial connection closed.
+2025-02-25 09:22:10,683 - INFO - Total commands completed: 8
+2025-02-25 09:22:10,683 - INFO - Total errors encountered: 8
+2025-02-25 09:22:10,683 - INFO - Total timeouts encountered: 0
+2025-02-25 09:22:10,683 - INFO - Total cycles completed: 2
+2025-02-25 09:22:45,347 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:22:45,347 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:22:46,353 - INFO - Feedback: b''
+2025-02-25 09:22:46,353 - ERROR - Received empty feedback.
+2025-02-25 09:22:49,353 - INFO - Sending command: #:
+
+2025-02-25 09:22:49,354 - INFO - Feedback: b'0'
+2025-02-25 09:22:49,354 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:52,355 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:22:52,355 - INFO - Feedback: b'0'
+2025-02-25 09:22:52,355 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:55,356 - INFO - Sending command: #:
+
+2025-02-25 09:22:55,356 - INFO - Feedback: b'0'
+2025-02-25 09:22:55,356 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:22:58,357 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:22:58,357 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:22:58,357 - INFO - Feedback: b'0'
+2025-02-25 09:22:58,357 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:23:01,358 - INFO - Sending command: #:
+
+2025-02-25 09:23:01,358 - INFO - Feedback: b'0'
+2025-02-25 09:23:01,359 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:23:04,359 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:23:04,360 - INFO - Feedback: b'0'
+2025-02-25 09:23:04,360 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:23:07,360 - INFO - Sending command: #:
+
+2025-02-25 09:23:07,360 - INFO - Feedback: b'0'
+2025-02-25 09:23:07,361 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:23:10,361 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:23:10,480 - INFO - Serial connection closed.
+2025-02-25 09:23:10,481 - INFO - Total commands completed: 8
+2025-02-25 09:23:10,481 - INFO - Total errors encountered: 8
+2025-02-25 09:23:10,481 - INFO - Total timeouts encountered: 0
+2025-02-25 09:23:10,481 - INFO - Total cycles completed: 2
+2025-02-25 09:29:00,217 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:29:00,218 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:29:01,220 - INFO - Feedback: b''
+2025-02-25 09:29:01,220 - ERROR - Received empty feedback.
+2025-02-25 09:29:04,221 - INFO - Sending command: #:
+
+2025-02-25 09:29:04,221 - INFO - Feedback: b'0'
+2025-02-25 09:29:04,221 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:07,222 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:29:07,222 - INFO - Feedback: b'0'
+2025-02-25 09:29:07,222 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:10,223 - INFO - Sending command: #:
+
+2025-02-25 09:29:10,224 - INFO - Feedback: b'0'
+2025-02-25 09:29:10,224 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:13,225 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:29:13,225 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:29:13,225 - INFO - Feedback: b'0'
+2025-02-25 09:29:13,225 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:16,226 - INFO - Sending command: #:
+
+2025-02-25 09:29:16,226 - INFO - Feedback: b'0'
+2025-02-25 09:29:16,227 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:19,227 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:29:19,228 - INFO - Feedback: b'0'
+2025-02-25 09:29:19,228 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:22,228 - INFO - Sending command: #:
+
+2025-02-25 09:29:22,229 - INFO - Feedback: b'0'
+2025-02-25 09:29:22,229 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:25,229 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:29:25,341 - INFO - Serial connection closed.
+2025-02-25 09:29:25,341 - INFO - Total commands completed: 8
+2025-02-25 09:29:25,341 - INFO - Total errors encountered: 8
+2025-02-25 09:29:25,341 - INFO - Total timeouts encountered: 0
+2025-02-25 09:29:25,341 - INFO - Total cycles completed: 2
+2025-02-25 09:29:49,438 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:29:49,439 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:29:50,441 - INFO - Feedback: b''
+2025-02-25 09:29:50,441 - ERROR - Received empty feedback.
+2025-02-25 09:29:50,941 - INFO - Sending command: #:
+
+2025-02-25 09:29:51,786 - INFO - Feedback: b'0'
+2025-02-25 09:29:51,786 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:52,287 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:29:53,298 - INFO - Feedback: b''
+2025-02-25 09:29:53,299 - ERROR - Received empty feedback.
+2025-02-25 09:29:53,799 - INFO - Sending command: #:
+
+2025-02-25 09:29:53,978 - INFO - Feedback: b'0'
+2025-02-25 09:29:53,978 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:54,478 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:29:54,478 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:29:55,480 - INFO - Feedback: b''
+2025-02-25 09:29:55,480 - ERROR - Received empty feedback.
+2025-02-25 09:29:55,981 - INFO - Sending command: #:
+
+2025-02-25 09:29:56,170 - INFO - Feedback: b'0'
+2025-02-25 09:29:56,170 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:56,670 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:29:57,674 - INFO - Feedback: b''
+2025-02-25 09:29:57,674 - ERROR - Received empty feedback.
+2025-02-25 09:29:58,175 - INFO - Sending command: #:
+
+2025-02-25 09:29:58,362 - INFO - Feedback: b'0'
+2025-02-25 09:29:58,362 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:29:58,862 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:29:58,982 - INFO - Serial connection closed.
+2025-02-25 09:29:58,983 - INFO - Total commands completed: 8
+2025-02-25 09:29:58,983 - INFO - Total errors encountered: 8
+2025-02-25 09:29:58,983 - INFO - Total timeouts encountered: 0
+2025-02-25 09:29:58,983 - INFO - Total cycles completed: 2
+2025-02-25 09:30:08,579 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:30:08,579 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:30:09,582 - INFO - Feedback: b''
+2025-02-25 09:30:09,582 - ERROR - Received empty feedback.
+2025-02-25 09:30:10,083 - INFO - Sending command: #:
+
+2025-02-25 09:30:10,926 - INFO - Feedback: b'0'
+2025-02-25 09:30:10,926 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:11,426 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:30:12,429 - INFO - Feedback: b''
+2025-02-25 09:30:12,430 - ERROR - Received empty feedback.
+2025-02-25 09:30:12,930 - INFO - Sending command: #:
+
+2025-02-25 09:30:13,118 - INFO - Feedback: b'0'
+2025-02-25 09:30:13,118 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:13,619 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:30:13,619 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:30:14,623 - INFO - Feedback: b''
+2025-02-25 09:30:14,624 - ERROR - Received empty feedback.
+2025-02-25 09:30:15,124 - INFO - Sending command: #:
+
+2025-02-25 09:30:15,294 - INFO - Feedback: b'0'
+2025-02-25 09:30:15,294 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:15,794 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:30:16,797 - INFO - Feedback: b''
+2025-02-25 09:30:16,797 - ERROR - Received empty feedback.
+2025-02-25 09:30:17,298 - INFO - Sending command: #:
+
+2025-02-25 09:30:17,486 - INFO - Feedback: b'0'
+2025-02-25 09:30:17,486 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:17,986 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:30:18,103 - INFO - Serial connection closed.
+2025-02-25 09:30:18,103 - INFO - Total commands completed: 8
+2025-02-25 09:30:18,103 - INFO - Total errors encountered: 8
+2025-02-25 09:30:18,103 - INFO - Total timeouts encountered: 0
+2025-02-25 09:30:18,103 - INFO - Total cycles completed: 2
+2025-02-25 09:30:29,523 - INFO - Connected to COM7 at 115200 baud.
+2025-02-25 09:30:29,523 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:30:30,527 - INFO - Feedback: b''
+2025-02-25 09:30:30,527 - ERROR - Received empty feedback.
+2025-02-25 09:30:33,527 - INFO - Sending command: #:
+
+2025-02-25 09:30:33,528 - INFO - Feedback: b'0'
+2025-02-25 09:30:33,528 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:36,529 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:30:36,529 - INFO - Feedback: b'0'
+2025-02-25 09:30:36,529 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:39,529 - INFO - Sending command: #:
+
+2025-02-25 09:30:39,530 - INFO - Feedback: b'0'
+2025-02-25 09:30:39,530 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:42,531 - INFO - Cycle: 1/2 completed.
+2025-02-25 09:30:42,531 - INFO - Sending command: QR:dfdsaf7:
+
+2025-02-25 09:30:42,532 - INFO - Feedback: b'0'
+2025-02-25 09:30:42,532 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:45,532 - INFO - Sending command: #:
+
+2025-02-25 09:30:45,533 - INFO - Feedback: b'0'
+2025-02-25 09:30:45,533 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:48,533 - INFO - Sending command: QR:sdvsdv4365h:
+
+2025-02-25 09:30:48,533 - INFO - Feedback: b'0'
+2025-02-25 09:30:48,534 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:51,534 - INFO - Sending command: #:
+
+2025-02-25 09:30:51,535 - INFO - Feedback: b'0'
+2025-02-25 09:30:51,535 - ERROR - Unexpected feedback code: 0
+2025-02-25 09:30:54,536 - INFO - Cycle: 2/2 completed.
+2025-02-25 09:30:54,645 - INFO - Serial connection closed.
+2025-02-25 09:30:54,646 - INFO - Total commands completed: 8
+2025-02-25 09:30:54,646 - INFO - Total errors encountered: 8
+2025-02-25 09:30:54,646 - INFO - Total timeouts encountered: 0
+2025-02-25 09:30:54,646 - INFO - Total cycles completed: 2

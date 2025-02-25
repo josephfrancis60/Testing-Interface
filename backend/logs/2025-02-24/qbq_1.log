@@ -233,3 +233,94 @@
 2025-02-24 16:14:50,773 - INFO - Total errors encountered: 20
 2025-02-24 16:14:50,773 - INFO - Total timeouts encountered: 0
 2025-02-24 16:14:50,773 - INFO - Total cycles completed: 5
+2025-02-24 17:23:10,672 - INFO - Connected to COM4 at 115200 baud.
+2025-02-24 17:23:10,672 - INFO - Sending command: BR:123:
+
+2025-02-24 17:23:11,673 - INFO - Feedback: b''
+2025-02-24 17:23:11,674 - ERROR - Received empty feedback.
+2025-02-24 17:23:13,674 - INFO - Sending command: #:
+
+2025-02-24 17:23:13,674 - INFO - Feedback: b'0'
+2025-02-24 17:23:13,674 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:15,675 - INFO - Sending command: QR:abc:
+
+2025-02-24 17:23:15,867 - INFO - Feedback: b'0'
+2025-02-24 17:23:15,867 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:17,867 - INFO - Sending command: #:
+
+2025-02-24 17:23:18,203 - INFO - Feedback: b'0'
+2025-02-24 17:23:18,203 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:20,203 - INFO - Cycle: 1/5 completed.
+2025-02-24 17:23:20,204 - INFO - Sending command: BR:123:
+
+2025-02-24 17:23:20,395 - INFO - Feedback: b'0'
+2025-02-24 17:23:20,395 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:22,395 - INFO - Sending command: #:
+
+2025-02-24 17:23:22,603 - INFO - Feedback: b'0'
+2025-02-24 17:23:22,603 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:24,603 - INFO - Sending command: QR:abc:
+
+2025-02-24 17:23:24,794 - INFO - Feedback: b'0'
+2025-02-24 17:23:24,795 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:26,795 - INFO - Sending command: #:
+
+2025-02-24 17:23:27,131 - INFO - Feedback: b'0'
+2025-02-24 17:23:27,131 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:29,131 - INFO - Cycle: 2/5 completed.
+2025-02-24 17:23:29,132 - INFO - Sending command: BR:123:
+
+2025-02-24 17:23:29,323 - INFO - Feedback: b'0'
+2025-02-24 17:23:29,323 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:31,323 - INFO - Sending command: #:
+
+2025-02-24 17:23:31,531 - INFO - Feedback: b'0'
+2025-02-24 17:23:31,531 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:33,531 - INFO - Sending command: QR:abc:
+
+2025-02-24 17:23:33,723 - INFO - Feedback: b'0'
+2025-02-24 17:23:33,723 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:35,724 - INFO - Sending command: #:
+
+2025-02-24 17:23:36,042 - INFO - Feedback: b'0'
+2025-02-24 17:23:36,043 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:38,043 - INFO - Cycle: 3/5 completed.
+2025-02-24 17:23:38,043 - INFO - Sending command: BR:123:
+
+2025-02-24 17:23:38,235 - INFO - Feedback: b'0'
+2025-02-24 17:23:38,235 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:40,235 - INFO - Sending command: #:
+
+2025-02-24 17:23:40,442 - INFO - Feedback: b'0'
+2025-02-24 17:23:40,443 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:42,443 - INFO - Sending command: QR:abc:
+
+2025-02-24 17:23:42,634 - INFO - Feedback: b'0'
+2025-02-24 17:23:42,634 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:44,635 - INFO - Sending command: #:
+
+2025-02-24 17:23:44,970 - INFO - Feedback: b'0'
+2025-02-24 17:23:44,971 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:46,971 - INFO - Cycle: 4/5 completed.
+2025-02-24 17:23:46,971 - INFO - Sending command: BR:123:
+
+2025-02-24 17:23:47,163 - INFO - Feedback: b'0'
+2025-02-24 17:23:47,163 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:49,163 - INFO - Sending command: #:
+
+2025-02-24 17:23:49,371 - INFO - Feedback: b'0'
+2025-02-24 17:23:49,371 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:51,371 - INFO - Sending command: QR:abc:
+
+2025-02-24 17:23:51,562 - INFO - Feedback: b'0'
+2025-02-24 17:23:51,563 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:53,563 - INFO - Sending command: #:
+
+2025-02-24 17:23:53,899 - INFO - Feedback: b'0'
+2025-02-24 17:23:53,899 - ERROR - Unexpected feedback code: 0
+2025-02-24 17:23:55,900 - INFO - Cycle: 5/5 completed.
+2025-02-24 17:23:56,022 - INFO - Serial connection closed.
+2025-02-24 17:23:56,022 - INFO - Total commands completed: 20
+2025-02-24 17:23:56,022 - INFO - Total errors encountered: 20
+2025-02-24 17:23:56,022 - INFO - Total timeouts encountered: 0
+2025-02-24 17:23:56,022 - INFO - Total cycles completed: 5
