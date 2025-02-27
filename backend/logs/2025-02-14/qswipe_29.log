@@ -1,2 +1,0 @@
-2025-02-14 10:21:29,459 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
-2025-02-14 11:45:12,917 - ERROR - Failed to connect to COM4: could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

@@ -1,8 +1,0 @@
-2025-02-13 17:14:40,772 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:15:00,627 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:15:01,869 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:15:02,743 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:51:17,194 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:51:18,182 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:51:18,825 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
-2025-02-13 17:51:21,057 - ERROR - Failed to connect to /dev/ttyUSB0: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
