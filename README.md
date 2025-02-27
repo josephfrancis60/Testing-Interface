@@ -14,7 +14,7 @@ The repository includes a `setup.sh` script that automates the entire installati
    ```bash
    git clone https://github.com/josephfrancis60/Testing-Interface.git
    ```
-   or `Download zip file` and extract it.
+   or `Download ZIP file` and extract it.
 
 
 2. Make the setup script executable:
@@ -87,7 +87,8 @@ If you prefer to set up the project manually, follow these steps:
 ## Project Structure
 
 - `/backend` - Node.js backend server
-- `/frontend` - Frontend application
+- `/frontend` - React frontend application
+- `/setup.sh` - Script for automated setup
 
 ## Development
 
