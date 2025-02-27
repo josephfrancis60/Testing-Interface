@@ -1,9 +1,20 @@
 #!/bin/bash
 
+# Set the GitHub repo URL
+GITHUB_REPO="https://github.com/josephfrancis60/Testing-Interface.git"
+
 # Set the project folder name
-PROJECT_FOLDER="Testing-Interface-main"
+PROJECT_FOLDER="Testing-Interface"
 
 echo "🚀 Starting Full-Stack Project Setup..."
+
+# ### 1️⃣ CHECK & INSTALL GIT ###
+# if ! command -v git &> /dev/null; then
+#     echo "📌 Git not found! Installing..."
+#     sudo apt update && sudo apt install -y git
+# else
+#     echo "✅ Git is already installed."
+# fi
 
 ### 2️⃣ CHECK & INSTALL NODE.JS + NPM (Latest) ###
 if ! command -v node &> /dev/null; then
@@ -14,8 +25,17 @@ else
     echo "✅ Node.js is already installed."
 fi
 
+### 3️⃣ CLONE THE REPOSITORY ###
+if [ ! -d "$PROJECT_FOLDER" ]; then
+    echo "📥 Cloning the repository..."
+    git clone $GITHUB_REPO
+else
+    echo "✅ Repository already exists. Pulling latest changes..."
+    cd $PROJECT_FOLDER && git pull origin main && cd ..
+fi
+
 # Navigate into the project directory
-cd "$PROJECT_FOLDER" || { echo "❌ Failed to enter project directory!"; exit 1; }
+cd $PROJECT_FOLDER || { echo "❌ Failed to enter project directory!"; exit 1; }
 
 ### 4️⃣ INSTALL BACKEND DEPENDENCIES ###
 if [ -d "backend" ]; then
