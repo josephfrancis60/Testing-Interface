@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+build/
+dist/
+
+# React
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# SQLite database
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Miscellaneous
+package-lock.json
+yarn.lock
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+temp/
+tmp/
