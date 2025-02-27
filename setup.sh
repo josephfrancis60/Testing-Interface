@@ -8,13 +8,13 @@ PROJECT_FOLDER="Testing-Interface"
 
 echo "🚀 Starting Full-Stack Project Setup..."
 
-### 1️⃣ CHECK & INSTALL GIT ###
-if ! command -v git &> /dev/null; then
-    echo "📌 Git not found! Installing..."
-    sudo apt update && sudo apt install -y git
-else
-    echo "✅ Git is already installed."
-fi
+# ### 1️⃣ CHECK & INSTALL GIT ###
+# if ! command -v git &> /dev/null; then
+#     echo "📌 Git not found! Installing..."
+#     sudo apt update && sudo apt install -y git
+# else
+#     echo "✅ Git is already installed."
+# fi
 
 ### 2️⃣ CHECK & INSTALL NODE.JS + NPM (Latest) ###
 if ! command -v node &> /dev/null; then
