@@ -1,1 +1,0 @@
-2025-02-17 21:35:40,688 - ERROR - Failed to connect to COM5: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

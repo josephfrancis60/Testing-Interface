@@ -1,1 +1,0 @@
-2025-02-20 11:17:25,191 - ERROR - Failed to connect to COM7: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
