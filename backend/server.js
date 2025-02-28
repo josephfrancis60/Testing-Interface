@@ -42,7 +42,7 @@ const defaultConfigs = {
         port: 'COM7',
         baudRate: 115200,
         numCycles: 5,
-        commandDelay: 0.5,
+        commandDelay: 1.5,
         commands: ['BR:123:', '#:', 'QR:abc:', '#:']  // Empty array since commands are generated dynamically in the script
     }
 };
@@ -506,6 +506,67 @@ app.post('/api/command-sets', (req, res) => {
             res.status(201).json({ id: this.lastID });
         }
     );
+});
+
+// Add this endpoint to update command sets
+app.put('/api/command-sets/:id', (req, res) => {
+    const { id } = req.params;
+    const { commands, name } = req.body;
+    
+    // Check if this is a default command set
+    db.get('SELECT is_default FROM command_sets WHERE id = ?', [id], (err, row) => {
+        if (err) {
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        
+        if (!row) {
+            res.status(404).json({ error: 'Command set not found' });
+            return;
+        }
+        
+        if (row.is_default) {
+            res.status(403).json({ error: 'Cannot modify default command set' });
+            return;
+        }
+        
+        // Prepare update data
+        const updateData = {};
+        const params = [];
+        
+        if (commands) {
+            updateData.commands = JSON.stringify(commands);
+            params.push(updateData.commands);
+        }
+        
+        if (name) {
+            updateData.name = name;
+            params.push(updateData.name);
+        }
+        
+        if (params.length === 0) {
+            res.status(400).json({ error: 'No data provided for update' });
+            return;
+        }
+        
+        // Construct SQL update statement
+        const setClause = Object.keys(updateData).map(key => `${key} = ?`).join(', ');
+        params.push(id);
+        
+        db.run(`UPDATE command_sets SET ${setClause} WHERE id = ?`, params, function(err) {
+            if (err) {
+                res.status(500).json({ error: err.message });
+                return;
+            }
+            
+            if (this.changes === 0) {
+                res.status(404).json({ error: 'Command set not found or no changes made' });
+                return;
+            }
+            
+            res.json({ message: 'Command set updated successfully' });
+        });
+    });
 });
 
 // Update instance with selected command set
