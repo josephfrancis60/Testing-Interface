@@ -114,7 +114,7 @@ const defaultConfigs = {
         port: 'COM7',
         baudRate: 115200,
         numCycles: 5,
-        commandDelay: 0.5,
+        commandDelay: 1.5,
         commands: ['BR:123:', '#:', 'QR:abc:', '#:']
     }
 };
