@@ -308,7 +308,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
         <CardContent>
           <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
             <Typography variant="h6">{instance.id}</Typography>
-            <IconButton 
+            <Button 
               onClick={() => {
                 if (instance.status !== 'running') {
                   setIsEditing(!isEditing);
@@ -327,9 +327,10 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
               }}
               color={isEditing ? 'primary' : 'default'}
               disabled={instance.status === 'running'}
+              sx={{ textTransform:'none', borderRadius:'4px',backgroundColor:'#cde5fa', color:'#000' }}
             >
-              <EditIcon />
-            </IconButton>
+              Configure
+            </Button>
           </Stack>
 
           {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
