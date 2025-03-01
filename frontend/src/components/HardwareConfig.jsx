@@ -36,7 +36,7 @@ const PortInUseDialog = ({ open, onClose, portNumber }) => (
     <DialogContent>
       <Typography>
         Port {portNumber} is currently being used by another running instance. 
-        Please choose a different port or wait for the other instance to complete.
+        Please choose a different port or wait for the other device to complete.
       </Typography>
     </DialogContent>
     <DialogActions>
