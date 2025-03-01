@@ -115,7 +115,7 @@ const defaultConfigs = {
         baudRate: 115200,
         numCycles: 5,
         commandDelay: 1.5,
-        commands: ['BR:123:', '#:', 'QR:abc:', '#:']
+        commands: ['#:', 'QR:abc:', '#:', 'BR:123:']
     }
 };
 
