@@ -112,22 +112,31 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
   }, [instance.hardware_type]);
 
   const fetchCommandSets = async () => {
-      try {
-          const response = await fetch(`${API_BASE_URL}/command-sets/${instance.hardware_type}`);
-          const data = await response.json();
-          setCommandSets(data);
-          
-          // Find current command set or default
-          const currentCommands = JSON.stringify(config.commands);
-          const matchingSet = data.find(set => set.commands === currentCommands) || 
-                            data.find(set => set.is_default);
-          
-          if (matchingSet) {
-              setSelectedCommandSetId(matchingSet.id);
-          }
-      } catch (err) {
-          setError('Failed to fetch command sets');
-      }
+    try {
+        const response = await fetch(`${API_BASE_URL}/command-sets/${instance.hardware_type}`);
+        const data = await response.json();
+        setCommandSets(data);
+        
+        // If we already have a selected command set, try to keep it selected
+        if (selectedCommandSetId) {
+            const commandSetStillExists = data.find(set => set.id === selectedCommandSetId);
+            if (commandSetStillExists) {
+                // Keep the current selection
+                return;
+            }
+        }
+        
+        // Otherwise, find a matching set or default
+        const currentCommands = JSON.stringify(config.commands);
+        const matchingSet = data.find(set => set.commands === currentCommands) || 
+                          data.find(set => set.is_default);
+        
+        if (matchingSet) {
+            setSelectedCommandSetId(matchingSet.id);
+        }
+    } catch (err) {
+        setError('Failed to fetch command sets');
+    }
   };
 
   const handleCreateCommandSet = async (newCommandSet) => {
@@ -272,68 +281,74 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
   };
 
   // Function to save edited commands
-  const handleSaveCommands = async () => {
-    try {
-      // Convert line-separated commands to array
-      const commandsArray = editableCommands
-        .split('\n')
-        .map(cmd => cmd.trim())
-        .filter(cmd => cmd.length > 0);
-      
-      if (commandsArray.length === 0) {
-        setSnackbarMessage('Commands cannot be empty');
-        setOpenSnackbar(true);
-        return;
-      }
-
-      // Get current command set
-      const currentSet = commandSets.find(set => set.id === selectedCommandSetId);
-      if (!currentSet || currentSet.is_default) {
-        setSnackbarMessage('Cannot edit default command set');
-        setOpenSnackbar(true);
-        return;
-      }
-
-      // Update the command set in the database
-      const response = await fetch(`${API_BASE_URL}/command-sets/${selectedCommandSetId}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          commands: commandsArray
-        })
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to update commands');
-      }
-
-      // Update local state
-      setConfig(prev => ({
-        ...prev,
-        commands: commandsArray
-      }));
-
-      // Update instance with the new commands
-      await fetch(`${API_BASE_URL}/instances/${instance.id}/command-set`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ commandSetId: selectedCommandSetId })
-      });
-
-      // Refresh command sets
-      await fetchCommandSets();
-      
-      setIsEditingCommands(false);
-      setSnackbarMessage('Commands updated successfully');
+const handleSaveCommands = async () => {
+  try {
+    // Convert line-separated commands to array
+    const commandsArray = editableCommands
+      .split('\n')
+      .map(cmd => cmd.trim())
+      .filter(cmd => cmd.length > 0);
+    
+    if (commandsArray.length === 0) {
+      setSnackbarMessage('Commands cannot be empty');
       setOpenSnackbar(true);
-      await onUpdate();
-    } catch (err) {
-      setError(err.message);
-      setSnackbarMessage('Failed to update commands');
-      setOpenSnackbar(true);
+      return;
     }
-  };
+
+    // Get current command set
+    const currentSet = commandSets.find(set => set.id === selectedCommandSetId);
+    if (!currentSet || currentSet.is_default) {
+      setSnackbarMessage('Cannot edit default command set');
+      setOpenSnackbar(true);
+      return;
+    }
+
+    // Update the command set in the database
+    const response = await fetch(`${API_BASE_URL}/command-sets/${selectedCommandSetId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        commands: commandsArray
+      })
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || 'Failed to update commands');
+    }
+
+    // Update local state
+    setConfig(prev => ({
+      ...prev,
+      commands: commandsArray
+    }));
+
+    // Update instance with the new commands
+    await fetch(`${API_BASE_URL}/instances/${instance.id}/command-set`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ commandSetId: selectedCommandSetId })
+    });
+
+    // Store the current commandSetId before refreshing
+    const currentCommandSetId = selectedCommandSetId;
+    
+    // Refresh command sets
+    await fetchCommandSets();
+    
+    // Explicitly set the selected command set ID back to what it was
+    setSelectedCommandSetId(currentCommandSetId);
+    
+    setIsEditingCommands(false);
+    setSnackbarMessage('Commands updated successfully');
+    setOpenSnackbar(true);
+    await onUpdate();
+  } catch (err) {
+    setError(err.message);
+    setSnackbarMessage('Failed to update commands');
+    setOpenSnackbar(true);
+  }
+};
 
   // Function to cancel command editing
   const handleCancelEditCommands = () => {
@@ -385,7 +400,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
       setOpenSnackbar(true);
     } catch (err) {
       setError(err.message);
-      setSnackbarMessage('Failed to update configuration');
+      setSnackbarMessage(err.message);
       setOpenSnackbar(true);
     }
   };
@@ -426,11 +441,11 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
               disabled={instance.status === 'running'}
               sx={{ textTransform:'none', borderRadius:'4px',backgroundColor:'#cde5fa', color:'#000' }}
             >
-              Configure
+              {isEditing ? 'Revert' : 'Configure'} 
             </Button>
           </Stack>
 
-          {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
+          {/* {error && <Alert severity="error"  sx={{ mb: 2 }}>{error}</Alert>} */}
 
           <form onSubmit={handleSubmit}>
             <Stack spacing={2}>
@@ -455,6 +470,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
               </FormControl>
 
               <TextField
+                required
                 label="Baud Rate"
                 variant="standard"
                 type="number"
@@ -465,6 +481,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
               />
 
               <TextField
+                required
                 label="Number of Cycles"
                 variant="standard"
                 type="number"
@@ -475,6 +492,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
               />
 
               <TextField
+                required
                 label="Command Delay (Seconds)"
                 variant="standard"
                 type="number"
@@ -505,6 +523,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
                                 <IconButton
                                     size="small"
                                     onClick={(e) => handleDeleteCommandSet(set.id, e)}
+                                    disabled={instance.status === 'running'}
                                     sx={{ ml: 1 }}
                                 >
                                     <DeleteIcon fontSize="small" />
@@ -574,6 +593,7 @@ const HardwareConfig = ({ instance, onUpdate, onDelete, onStart, onStop, running
                   <TextField
                     label="Commands"
                     multiline
+                    sx={{ minWidth:'90%' }}
                     rows={4}
                     value={Array.isArray(config.commands) ? config.commands.join('\n') : config.commands}
                     disabled={true}
