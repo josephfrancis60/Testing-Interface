@@ -451,22 +451,32 @@ const handleSaveCommands = async () => {
             <Stack spacing={2}>
               <FormControl variant="standard" fullWidth>
                 <InputLabel>Port</InputLabel>
-                <Select
-                  value={config.port}
-                  onChange={(e) => handleInputChange('port', e.target.value)}
-                  disabled={isInputDisabled}
-                >
-                  {availablePorts.map((port) => (
-                    <MenuItem key={port.path} value={port.path}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                          <Typography>{port.path}</Typography>
-                          <Typography variant="caption" color="text.secondary">
-                            Serial No: {port.serialNumber}
-                          </Typography>
-                        </Box>
-                    </MenuItem>
-                  ))}
-                </Select>
+                <Box sx={{ display:'flex', alignItems:'center', mt:2 }}>
+                  <Select
+                    fullWidth
+                    value={config.port}
+                    onChange={(e) => handleInputChange('port', e.target.value)}
+                    disabled={isInputDisabled}
+                  >
+                    {availablePorts.map((port) => (
+                      <MenuItem key={port.path} value={port.path}>
+                          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                            <Typography>{port.path}</Typography>
+                            <Typography variant="caption" color="text.secondary">
+                              Serial No: {port.serialNumber}
+                            </Typography>
+                          </Box>
+                      </MenuItem>
+                    ))}
+                  </Select>
+                  <IconButton 
+                    onClick={fetchAvailablePorts}
+                    disabled={isInputDisabled || portLoading}
+                    sx={{ ml: 1 }}
+                  >
+                    <RefreshIcon />
+                  </IconButton>
+                </Box>
               </FormControl>
 
               <TextField
