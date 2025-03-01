@@ -43,7 +43,7 @@ const defaultConfigs = {
         baudRate: 115200,
         numCycles: 5,
         commandDelay: 1.5,
-        commands: ['BR:123:', '#:', 'QR:abc:', '#:']  // Empty array since commands are generated dynamically in the script
+        commands: ['#:', 'QR:abc:', '#:', 'BR:123:']  // Empty array since commands are generated dynamically in the script
     }
 };
 
@@ -59,7 +59,7 @@ db.serialize(() => {
         port TEXT NOT NULL,
         baud_rate INTEGER NOT NULL,
         num_cycles INTEGER NOT NULL,
-        command_delay FLOAT DEFAULT 3.0,
+        command_delay FLOAT NOT NULL,
         commands TEXT NOT NULL,
         status TEXT DEFAULT 'idle',
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -146,7 +146,7 @@ db.serialize(() => {
         {
             name: 'Default QBQ Commands',
             hardware_type: 'qbq',
-            commands: JSON.stringify(['#:', 'QR:abc:', '#:', 'BR:123:']),
+            commands: JSON.stringify(['BR:123:', '#:', 'QR:abc:', '#:']),
             is_default: 1
         }
     ];
