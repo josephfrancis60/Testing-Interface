@@ -8,13 +8,14 @@ import argparse
 import json
 
 class HardwareTester:
-    def __init__(self, port, baud_rate, num_cycles, commands, command_delay, instance_id):
+    def __init__(self, port, baud_rate, num_cycles, commands, command_delay, instance_id, project_name):
         self.SERIAL_PORT = port
         self.BAUD_RATE = baud_rate
         self.NUM_CYCLES = num_cycles
         self.COMMANDS = commands
         self.COMMAND_DELAY = command_delay
         self.INSTANCE_ID = instance_id
+        self.PROJECT_NAME = project_name
         self.SUCCESS_CODE = 48
         self.TIMEOUT_CODE = 50
         
@@ -40,8 +41,8 @@ class HardwareTester:
         # Clear any existing handlers
         self.logger.handlers = []
         
-        # File handler - use instance ID for the log file name
-        log_file = os.path.join(self.log_dir, f'{self.INSTANCE_ID}.log')
+        # File handler - use project name and instance ID for the log file name
+        log_file = os.path.join(self.log_dir, f'{self.PROJECT_NAME}_{self.INSTANCE_ID}.log')
         file_handler = logging.FileHandler(log_file)
         file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         self.logger.addHandler(file_handler)
@@ -154,11 +155,12 @@ if __name__ == "__main__":
                        default=['BR:123:', '#:', 'QR:abc:', '#:'], 
                        help='Commands to execute')
     parser.add_argument('--id', type=str, required=True, help='Instance ID')
+    parser.add_argument('--project', type=str, required=True, help='Project Name')
 
     args = parser.parse_args()
     
     # Add newline to commands if not present
     commands = [cmd if cmd.endswith('\n') else cmd + '\n' for cmd in args.commands]
     
-    tester = HardwareTester(args.port, args.baud, args.cycles, commands, args.delay, args.id)
+    tester = HardwareTester(args.port, args.baud, args.cycles, commands, args.delay, args.id, args.project)
     tester.run()

@@ -359,6 +359,7 @@ app.post('/api/instances/:id/start', (req, res) => {
             '--cycles', instance.num_cycles.toString(),
             '--delay', instance.command_delay.toString(),
             '--id', id,
+            '--project', instance.project_name,
             '--commands', ...commands
         ]);
         
@@ -469,15 +470,36 @@ app.delete('/api/instances/:id', (req, res) => {
 app.get('/api/logs/:date/:instanceId', async (req, res) => {
     try {
       const { date, instanceId } = req.params;
-      const logPath = path.join(__dirname, 'logs', date, `${instanceId}.log`);
-      console.log(`Attempting to read log file at: ${logPath}`); // Add this line
-      const content = await fs.readFile(logPath, 'utf8');
-      res.send(content);
+      
+      // Get the project name for this instance
+      db.get('SELECT project_name FROM hardware_instances WHERE id = ?', [instanceId], async (err, row) => {
+        if (err) {
+          console.error('Error querying database:', err);
+          return res.status(500).send('Error retrieving project name');
+        }
+        
+        if (!row) {
+          return res.status(404).send('Instance not found');
+        }
+        
+        const projectName = row.project_name;
+        const logPath = path.join(__dirname, 'logs', date, `${projectName}_${instanceId}.log`);
+        
+        console.log(`Attempting to read log file at: ${logPath}`);
+        
+        try {
+          const content = await fs.readFile(logPath, 'utf8');
+          res.send(content);
+        } catch (readError) {
+          console.error('Error reading log file:', readError);
+          res.status(404).send('Log file not found');
+        }
+      });
     } catch (error) {
-      console.error('Error reading log file:', error);
-      res.status(404).send('Log file not found');
+      console.error('Error processing request:', error);
+      res.status(500).send('Server error');
     }
-  });
+});
 
   // Get command sets for a specific hardware type
 app.get('/api/command-sets/:hardwareType', (req, res) => {
