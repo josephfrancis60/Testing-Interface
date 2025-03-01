@@ -146,7 +146,7 @@ db.serialize(() => {
         {
             name: 'Default QBQ Commands',
             hardware_type: 'qbq',
-            commands: JSON.stringify(['BR:123:', '#:', 'QR:abc:', '#:']),
+            commands: JSON.stringify(['#:', 'QR:abc:', '#:', 'BR:123:']),
             is_default: 1
         }
     ];
