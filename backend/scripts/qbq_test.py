@@ -16,7 +16,7 @@ class HardwareTester:
         self.COMMAND_DELAY = command_delay
         self.INSTANCE_ID = instance_id
         self.PROJECT_NAME = project_name
-        self.SUCCESS_CODE = 48
+        self.SUCCESS_CODE = 48  # Keeping original success code
         self.TIMEOUT_CODE = 50
         
         self.count = 0
@@ -56,53 +56,112 @@ class HardwareTester:
         try:
             self.serial_conn = serial.Serial(self.SERIAL_PORT, self.BAUD_RATE, timeout=1)
             self.logger.info(f"Connected to {self.SERIAL_PORT} at {self.BAUD_RATE} baud.")
+            
+            # Add a small initialization delay and flush buffers
+            time.sleep(0.5)
+            self.serial_conn.reset_input_buffer()
+            self.serial_conn.reset_output_buffer()
+            
         except serial.SerialException as e:
             self.logger.error(f"Failed to connect to {self.SERIAL_PORT}: {e}")
             sys.exit(1)
 
     def wait_for_feedback(self):
         try:
-            fb = self.serial_conn.readline().strip()
+            # Add a small delay to give device time to respond
+            time.sleep(0.2)
+            
+            # Read with timeout
+            start_time = time.time()
+            timeout_duration = 2  # 2 seconds timeout for response
+            fb = b'0' 
+            feedback_value = None
+            
+            while time.time() - start_time < timeout_duration:
+                if self.serial_conn.in_waiting > 0:
+                    fb = self.serial_conn.readline().strip()
+                    break
+                time.sleep(0.1)
+            
             self.logger.info(f"Feedback: {fb}")
             
+            # Process the feedback
             if fb:
-                feedback_value = int(fb)
-                if feedback_value == self.SUCCESS_CODE:
-                    self.success_flag = 1
-                elif feedback_value == self.TIMEOUT_CODE:
-                    self.success_flag = 0
-                    self.logger.warning("Timeout occurred.")
-                    self.timeout += 1
-                else:
-                    self.success_flag = 0
-                    self.logger.error(f"Unexpected feedback code: {feedback_value}")
+                try:
+                    # Try to convert the feedback to an integer
+                    if isinstance(fb, bytes):
+                        # First try direct decode to string then convert to int
+                        try:
+                            feedback_value = int(fb.decode('utf-8'))
+                        except (UnicodeDecodeError, ValueError):
+                            # If that fails, try from_bytes
+                            try:
+                                feedback_value = int.from_bytes(fb, "little")
+                            except (ValueError, TypeError):
+                                feedback_value = None
+                    else:
+                        feedback_value = int(fb) if fb.isdigit() else None
+                    
+                    if feedback_value == self.SUCCESS_CODE:
+                        self.success_flag = 1
+                        self.logger.info("Success: Received valid success code (48).")
+                    elif feedback_value == self.TIMEOUT_CODE:
+                        self.success_flag = 0
+                        self.logger.warning("Timeout occurred.")
+                        self.timeout += 1
+                    elif feedback_value == 0:  # Check if feedback is 0
+                        self.logger.info("Valid feedback received. Ready for next command.")
+                        self.success_flag = 1  # Set success flag to 1 for valid feedback
+                    else:
+                        self.success_flag = 0
+                        self.logger.error(f"Error occurred. Feedback value: {feedback_value}")
+                        self.error += 1
+                except Exception as e:
+                    self.logger.error(f"Error processing feedback: {e}")
                     self.error += 1
+                    self.success_flag = 0
             else:
                 self.logger.error("Received empty feedback.")
                 self.error += 1
+                self.success_flag = 0
                 
-        except ValueError as ve:
-            self.logger.error(f"ValueError in feedback processing: {ve}")
-            self.error += 1
         except Exception as e:
             self.logger.error(f"Exception while processing feedback: {e}")
             self.error += 1
+            self.success_flag = 0
             
         self.count += 1
-        time.sleep(self.COMMAND_DELAY)
+        
+        # Return feedback value for validation
+        return feedback_value
 
     def send_command(self, command):
         if not self.is_running:
-            return
+            return False
             
         self.logger.info(f"Sending command: {command}")
         try:
+            # Flush input buffer before sending a new command
+            self.serial_conn.reset_input_buffer()
+            
+            # Send the command
             self.serial_conn.write(command.encode())
-            self.wait_for_feedback()
+            self.serial_conn.flush()  # Ensure the command is sent completely
+            
+            # Wait for and process feedback
+            feedback_value = self.wait_for_feedback()
+            
+            # Return True if feedback is 0 (valid feedback)
+            return feedback_value == 0
+            
         except serial.SerialTimeoutException:
             self.logger.error(f"Timeout while sending command: {command}")
+            self.error += 1
+            return False
         except Exception as e:
             self.logger.error(f"Exception while sending command: {e}")
+            self.error += 1
+            return False
 
     def stop(self):
         self.is_running = False
@@ -117,28 +176,44 @@ class HardwareTester:
         self.logger.info(f"Total commands completed: {self.count}")
         self.logger.info(f"Total errors encountered: {self.error}")
         self.logger.info(f"Total timeouts encountered: {self.timeout}")
-        self.logger.info(f"Total cycles completed: {self.count // len(self.COMMANDS)}")
+        self.logger.info(f"Total cycles completed: {self.count // len(self.COMMANDS) if self.COMMANDS else 0}\n")
 
     def run(self):
         try:
             for cycle in range(self.NUM_CYCLES):
                 if not self.is_running:
                     break
-                    
-                for command in self.COMMANDS:
+                
+                cycle_success = True
+                for i, command in enumerate(self.COMMANDS):
                     if not self.is_running:
                         break
-                    self.send_command(command)
+                    
+                    # Send command and get validation status
+                    valid_feedback = self.send_command(command)
+                    
+                    # If valid feedback (0) is received
+                    if valid_feedback:
+                        self.logger.info(f"Command {i+1}/{len(self.COMMANDS)} succeeded with valid feedback.")
+                        
+                        # Apply command delay after successful command before sending the next one
+                        self.logger.info(f"Waiting for {self.COMMAND_DELAY} seconds before sending next command...")
+                        time.sleep(self.COMMAND_DELAY)
+                    else:
+                        self.logger.warning(f"Command {i+1}/{len(self.COMMANDS)} failed to receive valid feedback. Stopping command sequence for this cycle.")
+                        cycle_success = False
+                        break
                 
                 progress = {
                     'cycle': cycle + 1,
                     'total_cycles': self.NUM_CYCLES,
                     'errors': self.error,
-                    'timeouts': self.timeout
+                    'timeouts': self.timeout,
+                    'cycle_completed': cycle_success
                 }
                 
                 print(json.dumps(progress))  # Print progress as JSON for easy parsing
-                self.logger.info(f"Cycle: {cycle + 1}/{self.NUM_CYCLES} completed.")
+                self.logger.info(f"Cycle: {cycle + 1}/{self.NUM_CYCLES} completed with status: {'Success' if cycle_success else 'Failed'}")
                 
         except KeyboardInterrupt:
             self.logger.info("Script interrupted by user.")
