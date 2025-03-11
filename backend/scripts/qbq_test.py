@@ -104,7 +104,7 @@ class HardwareTester:
                     
                     if feedback_value == self.SUCCESS_CODE:
                         self.success_flag = 1
-                        self.logger.info("Success: Received valid success code (48).")
+                        self.logger.info("Success: Received valid success code.")
                     elif feedback_value == self.TIMEOUT_CODE:
                         self.success_flag = 0
                         self.logger.warning("Timeout occurred.")
