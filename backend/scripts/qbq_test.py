@@ -52,6 +52,47 @@ class HardwareTester:
         stream_handler.setFormatter(logging.Formatter('%(message)s'))
         self.logger.addHandler(stream_handler)
 
+    # def setup_logging(self):
+    #     # Option 1: Use backend folder in the project directory
+    #     # Determine the project root directory - assumes script is in a module inside the project
+    #     script_dir = os.path.dirname(os.path.abspath(__file__))
+    #     project_root = os.path.dirname(script_dir)  # Go up one level
+        
+    #     # Create logs directory in the backend folder
+    #     self.log_dir = os.path.join(project_root, 'backend', 'logs')
+        
+    #     # Option 2: For creating logs directly on desktop (uncomment to use this option)
+    #     # user_home = os.path.expanduser('~')  # Get user's home directory
+    #     # self.log_dir = os.path.join(user_home, 'Desktop', 'testing_interface_logs')
+        
+    #     # Create date-based subdirectory
+    #     current_date = datetime.now().strftime("%Y-%m-%d")
+    #     date_log_dir = os.path.join(self.log_dir, current_date)
+        
+    #     # Ensure directories exist
+    #     os.makedirs(date_log_dir, exist_ok=True)
+        
+    #     # Create logger with instance ID
+    #     self.logger = logging.getLogger(self.INSTANCE_ID)
+    #     self.logger.setLevel(logging.INFO)
+        
+    #     # Clear any existing handlers
+    #     self.logger.handlers = []
+        
+    #     # File handler - use project name and instance ID for the log file name
+    #     log_file = os.path.join(date_log_dir, f'{self.PROJECT_NAME}_{self.INSTANCE_ID}.log')
+    #     file_handler = logging.FileHandler(log_file)
+    #     file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    #     self.logger.addHandler(file_handler)
+        
+    #     # Stream handler for real-time output
+    #     stream_handler = logging.StreamHandler(sys.stdout)
+    #     stream_handler.setFormatter(logging.Formatter('%(message)s'))
+    #     self.logger.addHandler(stream_handler)
+        
+    #     # Log the path to help verify the log file location
+    #     self.logger.info(f"Log file created at: {log_file}")
+
     def connect_serial(self):
         try:
             self.serial_conn = serial.Serial(self.SERIAL_PORT, self.BAUD_RATE, timeout=1)
