@@ -353,13 +353,13 @@ class QSwipeTester:
                     
                     if feedback_value == self.SUCCESS_CODE:
                         self.success_flag = 1
-                        self.logger.info("Success: Received valid success code (48).")
+                        self.logger.info("Success: Received valid success code.")
                     elif feedback_value == self.TIMEOUT_CODE:
                         self.success_flag = 0
                         self.logger.warning("Timeout occurred.")
                         self.timeout += 1
                     elif feedback_value == 0:  # Check if feedback is 0 (common for QSwipe)
-                        self.logger.info("Valid feedback received (0). Ready for next command.")
+                        self.logger.info("Valid feedback received. Ready for next command.")
                         self.success_flag = 1  # Set success flag to 1 for valid feedback
                     else:
                         self.success_flag = 0
